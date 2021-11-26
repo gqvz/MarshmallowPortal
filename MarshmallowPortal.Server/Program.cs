@@ -13,6 +13,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("log.txt")
     .CreateLogger();
+
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "MarshmallowPortal.Server", Version = "v1"}); });
