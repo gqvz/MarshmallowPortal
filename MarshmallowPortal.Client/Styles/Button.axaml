@@ -1,0 +1,31 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <Border Width="100" Height="100">
+                <Button Classes="Modern" Content="Click Me!"></Button>
+            </Border>
+        </Border>
+    </Design.PreviewWith>
+    
+    <Style Selector="Button.Modern">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    
+    <Style Selector="Button.Modern:pointerover">
+        <Setter Property="RenderTransform" Value="scale(1.1)"/>
+    </Style>
+    
+    <Style Selector="Button.Modern:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    
+        
+    <Style Selector="Button.Modern:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    
+    <Style Selector="Button.Modern:pressed">
+        <Setter Property="RenderTransform" Value="scale(1.2)"/>
+    </Style>
+</Styles>

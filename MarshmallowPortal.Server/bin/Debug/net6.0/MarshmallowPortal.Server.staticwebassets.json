@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YfUA1ojc4dqM4JBvKK0PRVC0vThiLL4AyHfd3xMmXBw=",
+  "Source": "MarshmallowPortal.Server",
+  "BasePath": "_content/MarshmallowPortal.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "RelatedManifests": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

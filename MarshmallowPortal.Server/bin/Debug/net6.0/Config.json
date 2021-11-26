@@ -1,0 +1,7 @@
+﻿{
+  "GoogleOptions": {
+    "ClientId": "1014028450593-3488rb7a1naenckr526ptl14t40ngl2f.apps.googleusercontent.com",
+    "ClientSecret": "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",
+    "RedirectUri": "http://localhost:5002"
+  }
+}

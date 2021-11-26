@@ -1,0 +1,133 @@
+2021-11-24 21:54:40.283 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2021-11-24 21:54:40.406 +05:30 [DBG] Hosting starting
+2021-11-24 21:54:40.664 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: 2709D8D22C8B6CDA47E340CC86993D8BB0D0CFB7)
+2021-11-24 21:54:40.723 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-24 21:54:40.724 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-24 21:54:40.725 +05:30 [DBG] Loaded hosting startup assembly StuDentist.Server
+2021-11-24 21:54:40.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-24 21:54:40.728 +05:30 [INF] Hosting environment: Development
+2021-11-24 21:54:40.729 +05:30 [INF] Content root path: C:\dev\StuDentist\StuDentist.Server
+2021-11-24 21:54:40.730 +05:30 [DBG] Hosting started
+2021-11-24 21:54:41.139 +05:30 [DBG] Connection id "0HMDFCRLDMAN1" received FIN.
+2021-11-24 21:54:41.154 +05:30 [DBG] Connection id "0HMDFCRLDMAN1" accepted.
+2021-11-24 21:54:41.163 +05:30 [DBG] Connection id "0HMDFCRLDMAN1" started.
+2021-11-24 21:54:41.217 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter) in System.Net.Security.dll:token 0x60002ee+0xa5
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm) in System.Net.Security.dll:token 0x60002ed+0x299
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context) in Microsoft.AspNetCore.Server.Kestrel.Core.dll:token 0x600024b+0x22a
+2021-11-24 21:54:41.331 +05:30 [DBG] Connection id "0HMDFCRLDMAN1" stopped.
+2021-11-24 21:54:41.346 +05:30 [DBG] Connection id "0HMDFCRLDMAN1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-11-24 21:54:44.441 +05:30 [DBG] Connection id "0HMDFCRLDMAN2" accepted.
+2021-11-24 21:54:44.718 +05:30 [DBG] Connection id "0HMDFCRLDMAN2" received FIN.
+2021-11-24 21:54:44.892 +05:30 [DBG] Connection id "0HMDFCRLDMAN2" started.
+2021-11-24 21:54:44.906 +05:30 [DBG] Connection id "0HMDFCRLDMAN3" accepted.
+2021-11-24 21:54:44.908 +05:30 [DBG] Connection id "0HMDFCRLDMAN3" started.
+2021-11-24 21:54:45.022 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter) in System.Net.Security.dll:token 0x60002ee+0xa5
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm) in System.Net.Security.dll:token 0x60002ed+0x299
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context) in Microsoft.AspNetCore.Server.Kestrel.Core.dll:token 0x600024b+0x22a
+2021-11-24 21:54:45.074 +05:30 [DBG] Connection "0HMDFCRLDMAN3" established using the following protocol: "Tls12"
+2021-11-24 21:54:45.090 +05:30 [DBG] Connection id "0HMDFCRLDMAN2" stopped.
+2021-11-24 21:54:45.091 +05:30 [DBG] Connection id "0HMDFCRLDMAN2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-11-24 21:54:45.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-24 21:54:45.439 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-11-24 21:54:45.442 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-11-24 21:54:45.495 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2021-11-24 21:54:46.260 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:46.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 1084.6441ms
+2021-11-24 21:54:46.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-11-24 21:54:46.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-24 21:54:46.696 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2021-11-24 21:54:46.691 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2021-11-24 21:54:46.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-24 21:54:46.704 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:46.706 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:46.707 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2021-11-24 21:54:46.710 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:46.731 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-24 21:54:46.737 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-24 21:54:46.740 +05:30 [DBG] Handled. Status code: 304 File: /swagger-ui-standalone-preset.js
+2021-11-24 21:54:46.740 +05:30 [DBG] Handled. Status code: 304 File: /swagger-ui-bundle.js
+2021-11-24 21:54:46.742 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 51.2248ms
+2021-11-24 21:54:46.742 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 51.7133ms
+2021-11-24 21:54:46.776 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-24 21:54:46.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 125.0501ms
+2021-11-24 21:54:46.906 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-24 21:54:46.908 +05:30 [DBG] No candidates found for the request path '/swagger/favicon-16x16.png'
+2021-11-24 21:54:46.908 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:46.912 +05:30 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException() in System.Private.CoreLib.dll:token 0x6002e3e+0x10
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested() in System.Private.CoreLib.dll:token 0x6002e3d+0x8
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken) in Microsoft.AspNetCore.Http.Extensions.dll:token 0x6000088+0x90
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync() in Microsoft.AspNetCore.StaticFiles.dll:token 0x6000073+0xb6
+2021-11-24 21:54:46.919 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-24 21:54:47.022 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-24 21:54:47.089 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2021-11-24 21:54:47.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 182.0456ms
+2021-11-24 21:54:47.089 +05:30 [DBG] Request did not match any endpoints
+2021-11-24 21:54:47.118 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-24 21:54:47.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 111.2056ms
+2021-11-24 21:57:06.654 +05:30 [INF] hi { Hi = hi, Hi2 = 5 }
+2021-11-24 21:57:06.979 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-24 21:57:06.981 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-24 21:57:06.984 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-24 21:57:06.985 +05:30 [INF] Hosting environment: Development
+2021-11-24 21:57:06.986 +05:30 [INF] Content root path: C:\dev\StuDentist\StuDentist.Server
+2021-11-24 21:57:07.578 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-24 21:57:07.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 187.2573ms
+2021-11-24 21:57:08.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-24 21:57:08.046 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-24 21:57:08.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 106.1290ms
+2021-11-24 21:57:29.935 +05:30 [INF] hi { Hi = hi, Hi2 = 5 }
+2021-11-24 21:57:30.276 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-24 21:57:30.279 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-24 21:57:30.282 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-24 21:57:30.285 +05:30 [INF] Hosting environment: Development
+2021-11-24 21:57:30.286 +05:30 [INF] Content root path: C:\dev\StuDentist\StuDentist.Server
+2021-11-24 21:57:30.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-24 21:57:30.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 191.9080ms
+2021-11-24 21:57:31.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-24 21:57:31.275 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-24 21:57:31.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 137.9655ms

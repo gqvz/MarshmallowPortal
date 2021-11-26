@@ -1,0 +1,63 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:converters="clr-namespace:MarshmallowPortal.Client.Converters"
+        xmlns:viewModels="clr-namespace:MarshmallowPortal.Client.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="MarshmallowPortal.Client.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="StuDentist.Client"
+        ExtendClientAreaToDecorationsHint="True"
+        MinHeight="450"
+        MinWidth="800">
+
+    <Window.Styles>
+        <StyleInclude Source="/Styles/Button.axaml"/>
+    </Window.Styles>
+    
+    <Window.Resources>
+        <converters:SubtractConverter x:Key="Sub"/>
+    </Window.Resources>
+    
+    <Design.DataContext>
+        <viewModels:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Panel Name="Content">
+        <Grid RowDefinitions="30, 100*" RowSpan="0">
+            <Panel Grid.Row="0" Name="TitleBar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" IsHitTestVisible="False">
+                <TextBlock Text="StuDentist" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="5 5 0 0"/>
+            </Panel>
+            <Panel Grid.Row="1"
+                   VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" Name="AllTheContent">
+                <StackPanel Name="LoginWindow" VerticalAlignment="Center" Spacing="20"  IsEnabled="{Binding LogInActive}" IsVisible="{Binding LogInActive}">
+                    <TextBlock Text="Please Login using your browser" TextAlignment="Center" FontSize="30"/>
+                    <Button Classes="Modern" Content="Open Browser" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <Panel Name="MainWindow" IsEnabled="{Binding MainWindowEnabled}" IsVisible="{Binding MainWindowEnabled}">
+                    <Grid ColumnDefinitions="5*, 1, 95*">
+                        <Panel Grid.Column="0" Name="Sidebar">
+                            <Button i:Attached.Icon="fas fb-list" Classes="Modern" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 5 0 0"/>
+                            <Button i:Attached.Icon="fas fa-cog" Classes="Modern" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 0 0 5"/>
+                        </Panel>
+                        <Separator Grid.Column="1" Background="#535861"/>
+                        <Grid Grid.Column="2" RowDefinitions="9*, 95*">
+                            <Panel Grid.Row="0">
+                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
+                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
+                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
+                            </Panel>
+                            <ScrollViewer Grid.Row="1">
+                                <StackPanel Name="QuestionArea">
+                                    
+                                </StackPanel>
+                            </ScrollViewer>
+                        </Grid>
+                    </Grid>
+                </Panel>
+            </Panel>
+        </Grid>
+    </Panel>
+</Window>

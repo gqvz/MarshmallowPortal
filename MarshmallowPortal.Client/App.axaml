@@ -1,0 +1,12 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:client="clr-namespace:MarshmallowPortal.Client"
+             x:Class="MarshmallowPortal.Client.App">
+    <Application.DataTemplates>
+        <client:ViewLocator/>
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme Mode="Dark"/>
+    </Application.Styles>
+</Application>
