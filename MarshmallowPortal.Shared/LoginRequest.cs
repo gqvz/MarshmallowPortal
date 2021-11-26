@@ -1,6 +1,5 @@
 ﻿namespace MarshmallowPortal.Shared;
 
-public class LoginRequest
+public class LoginRequest : Request
 {
-    public string Token { get; init; }
 }

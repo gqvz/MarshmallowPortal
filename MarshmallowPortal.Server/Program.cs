@@ -1,7 +1,12 @@
+using System;
 using Google.OAuth2;
 using MarshmallowPortal.Server.Data;
 using MarshmallowPortal.Server.Options;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Events;
@@ -16,6 +21,7 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
+builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "MarshmallowPortal.Server", Version = "v1"}); });
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite("Data Source=Db/app.db"));
 builder.Configuration.AddJsonFile("Config.json");
@@ -40,6 +46,7 @@ var app = builder.Build();
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+    app.UseMvc();
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarshmallowPortal.Server v1"));
 }

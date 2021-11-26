@@ -10,7 +10,11 @@ build_property.RootNamespace = MarshmallowPortal.Server
 build_property.RootNamespace = MarshmallowPortal.Server
 build_property.ProjectDir = C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
 build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\dev\MarshmallowPortal\MarshmallowPortal.Server
 build_property._RazorSourceGeneratorDebug = 
-build_property._RazorSourceGeneratorHeapDumps = 
+
+[C:/dev/MarshmallowPortal/MarshmallowPortal.Server/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

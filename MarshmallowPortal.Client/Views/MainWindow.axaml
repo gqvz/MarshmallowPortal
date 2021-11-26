@@ -28,7 +28,7 @@
     <Panel Name="Content">
         <Grid RowDefinitions="30, 100*" RowSpan="0">
             <Panel Grid.Row="0" Name="TitleBar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" IsHitTestVisible="False">
-                <TextBlock Text="StuDentist" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="5 5 0 0"/>
+                <TextBlock Text="Marshmallow Portal" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="5 5 0 0"/>
             </Panel>
             <Panel Grid.Row="1"
                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" Name="AllTheContent">

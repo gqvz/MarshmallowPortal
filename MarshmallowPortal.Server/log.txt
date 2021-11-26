@@ -258,3 +258,698 @@ System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadat
 2021-11-26 19:03:20.451 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
 2021-11-26 19:03:41.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
 2021-11-26 19:03:41.985 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 108.5116ms
+2021-11-26 19:13:31.788 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:13:31.819 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:13:31.824 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:13:31.829 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:13:31.830 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:13:35.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 19:13:35.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 403.7253ms
+2021-11-26 19:13:38.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/ - -
+2021-11-26 19:13:38.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/ - - - 301 0 - 4.4491ms
+2021-11-26 19:13:38.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:13:38.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 94.3637ms
+2021-11-26 19:13:39.003 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 19:13:39.027 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 19:13:39.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 24.9900ms
+2021-11-26 19:13:39.052 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:13:39.160 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.1599ms
+2021-11-26 19:34:55.572 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:34:55.605 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:34:55.611 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:34:55.613 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:34:55.614 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:34:57.328 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 19:34:57.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 140.6525ms
+2021-11-26 19:35:00.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:35:00.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 86.8974ms
+2021-11-26 19:35:00.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 19:35:00.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:35:00.492 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 19:35:00.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 94.7465ms
+2021-11-26 19:35:00.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.2228ms
+2021-11-26 19:35:04.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:35:04.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.7143ms
+2021-11-26 19:35:18.591 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/login/index - -
+2021-11-26 19:35:18.600 +05:30 [INF] Executing endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 19:35:18.627 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 19:35:18.864 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-11-26 19:35:18.896 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server) in 246.5097ms
+2021-11-26 19:35:18.933 +05:30 [INF] Executed endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 19:35:18.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/login/index - - - 401 - application/problem+json;+charset=utf-8 357.3156ms
+2021-11-26 19:35:46.647 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:35:46.675 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:35:46.681 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:35:46.683 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:35:46.683 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:35:49.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/login/index - -
+2021-11-26 19:35:49.463 +05:30 [INF] Executing endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 19:35:49.481 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 19:35:49.681 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-11-26 19:35:49.729 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server) in 239.4088ms
+2021-11-26 19:35:49.752 +05:30 [INF] Executed endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 19:35:49.767 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/login/index - - - 401 - application/problem+json;+charset=utf-8 383.3053ms
+2021-11-26 19:35:57.650 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:35:57.719 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 69.2948ms
+2021-11-26 19:35:57.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 19:35:57.874 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 19:35:57.882 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 22.9207ms
+2021-11-26 19:35:57.898 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:35:57.937 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:35:57.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 98.8974ms
+2021-11-26 19:38:53.200 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:38:53.220 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:38:53.224 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:38:53.225 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:38:53.226 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:38:55.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:38:55.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 202.4779ms
+2021-11-26 19:38:56.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-26 19:38:56.034 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-26 19:38:56.052 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-26 19:38:56.054 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-26 19:38:56.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 27.5790ms
+2021-11-26 19:38:56.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 26.8877ms
+2021-11-26 19:38:56.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:38:56.214 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:38:56.283 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 90.8683ms
+2021-11-26 19:51:58.054 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:51:58.083 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:51:58.089 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:51:58.091 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:51:58.092 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:52:05.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:52:05.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 193.5966ms
+2021-11-26 19:52:06.006 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-26 19:52:06.006 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-26 19:52:06.026 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-26 19:52:06.026 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-26 19:52:06.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 21.9216ms
+2021-11-26 19:52:06.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 22.2159ms
+2021-11-26 19:52:06.159 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:52:06.189 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:52:06.256 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 97.1568ms
+2021-11-26 19:55:08.285 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:55:08.306 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:55:08.309 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:55:08.310 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:55:08.311 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:55:11.145 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:55:11.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 193.2617ms
+2021-11-26 19:55:11.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-26 19:55:11.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-26 19:55:11.423 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-26 19:55:11.423 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-26 19:55:11.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 33.1029ms
+2021-11-26 19:55:11.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 29.4077ms
+2021-11-26 19:55:11.557 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:55:11.586 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:55:11.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 97.2471ms
+2021-11-26 19:58:49.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:58:49.861 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1330ms
+2021-11-26 19:58:53.122 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 19:58:53.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 2.0302ms
+2021-11-26 19:58:53.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-26 19:58:53.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-26 19:58:53.344 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-26 19:58:53.344 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-26 19:58:53.345 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 4.3688ms
+2021-11-26 19:58:53.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 5.2683ms
+2021-11-26 19:58:53.542 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:58:53.556 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:58:53.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 36.5443ms
+2021-11-26 19:59:44.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 19:59:44.757 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 19:59:44.821 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 67.8970ms
+2021-11-26 20:02:00.887 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:02:00.907 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:02:00.912 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:02:00.913 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:02:00.914 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 20:02:08.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:02:08.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 190.9668ms
+2021-11-26 20:02:09.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 20:02:09.034 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 20:02:09.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 18.3287ms
+2021-11-26 20:02:09.052 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:02:09.088 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 20:02:09.167 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 115.0530ms
+2021-11-26 20:03:25.115 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:03:25.137 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:03:25.140 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:03:25.141 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:03:25.142 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 20:03:28.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:03:28.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 206.8329ms
+2021-11-26 20:03:28.728 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-11-26 20:03:28.728 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-11-26 20:03:28.750 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-11-26 20:03:28.750 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2021-11-26 20:03:28.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 25.5129ms
+2021-11-26 20:03:28.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 26.6614ms
+2021-11-26 20:03:28.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:03:28.914 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext) in Microsoft.AspNetCore.Routing.dll:token 0x600005c+0x129
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 20:03:28.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 90.9166ms
+2021-11-26 20:16:17.764 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:16:17.782 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:16:17.784 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:16:17.788 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:16:17.789 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:16:18.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:16:18.742 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 299.5609ms
+2021-11-26 20:16:18.947 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 20:16:18.967 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 20:16:18.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 23.6786ms
+2021-11-26 20:16:18.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:16:19.129 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.9434ms
+2021-11-26 20:16:26.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/Login/index - -
+2021-11-26 20:16:26.732 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 20:16:27.048 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-11-26 20:16:27.061 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server) in 317.6193ms
+2021-11-26 20:16:27.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/Login/index - - - 401 - application/problem+json;+charset=utf-8 364.6381ms
+2021-11-26 20:39:30.076 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:39:30.094 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:39:30.096 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:39:30.097 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:39:30.098 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:39:30.848 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:39:31.019 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 170.8756ms
+2021-11-26 20:39:31.277 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 20:39:31.289 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 20:39:31.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 15.0036ms
+2021-11-26 20:39:31.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:39:31.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.3218ms
+2021-11-26 20:39:35.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 20:39:35.693 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-11-26 20:41:08.168 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 20:41:08.662 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:41:08.665 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:41:08.666 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:41:08.667 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:41:08.668 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:41:09.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:41:09.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 291.5030ms
+2021-11-26 20:41:10.083 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:41:10.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.3424ms
+2021-11-26 20:41:13.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 20:41:13.306 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-11-26 20:41:13.317 +05:30 [INF] Executing ViewResult, running view Index.
+2021-11-26 20:41:13.321 +05:30 [ERR] The view 'Index' was not found. Searched locations: ["/Views/Home/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2021-11-26 20:41:13.335 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 23.7768ms
+2021-11-26 20:41:13.341 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Home/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-26 20:41:13.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 500 - text/html;+charset=utf-8 199.1609ms
+2021-11-26 20:41:50.286 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 20:41:50.792 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:41:50.805 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:41:50.808 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:41:50.809 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:41:50.810 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:41:51.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:41:51.780 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 204.6242ms
+2021-11-26 20:41:52.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:41:52.145 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.4325ms
+2021-11-26 20:41:56.743 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 20:41:56.777 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-11-26 20:41:56.803 +05:30 [INF] Executing ViewResult, running view Index.
+2021-11-26 20:41:56.956 +05:30 [INF] Executed ViewResult - view Index executed in 147.8539ms.
+2021-11-26 20:41:56.974 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 191.2694ms
+2021-11-26 20:41:57.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 265.7579ms
+2021-11-26 20:52:42.776 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 20:52:43.241 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:52:43.249 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:52:43.250 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:52:43.251 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:52:43.252 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:52:44.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:52:44.193 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 164.5574ms
+2021-11-26 20:52:44.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:52:44.595 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.7289ms
+2021-11-26 20:52:52.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Login/google - -
+2021-11-26 20:52:52.823 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature MarshmallowPortal.Shared.LoginResponse Index() on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 20:52:53.038 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 20:52:53.046 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server) in 216.7779ms
+2021-11-26 20:52:53.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Login/google - - - 200 - application/json;+charset=utf-8 277.1971ms
+2021-11-26 20:55:41.377 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 20:55:41.894 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 20:55:41.896 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 20:55:41.897 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 20:55:41.897 +05:30 [INF] Hosting environment: Development
+2021-11-26 20:55:41.898 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 20:55:42.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 20:55:42.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 178.8446ms
+2021-11-26 20:55:42.793 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:55:42.972 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.7064ms
+2021-11-26 20:57:43.877 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 52
+2021-11-26 20:57:43.923 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature MarshmallowPortal.Shared.LoginResponse Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 20:57:44.188 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 20:57:44.197 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 267.3002ms
+2021-11-26 20:57:44.207 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 52 - 200 - application/json;+charset=utf-8 330.9717ms
+2021-11-26 20:59:23.032 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 20:59:23.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.2675ms
+2021-11-26 21:10:25.749 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:10:26.252 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:10:26.253 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:10:26.259 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:10:26.260 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:10:26.261 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:10:26.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:10:26.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 157.4125ms
+2021-11-26 21:10:27.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:10:27.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 170.5944ms
+2021-11-26 21:10:51.538 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 37
+2021-11-26 21:10:51.577 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 21:10:51.944 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 21:10:51.955 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 368.1561ms
+2021-11-26 21:10:51.960 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 37 - 200 - application/json;+charset=utf-8 421.9740ms
+2021-11-26 21:22:44.113 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:22:44.579 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:22:44.580 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:22:44.581 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:22:44.582 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:22:44.585 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:22:45.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:22:45.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 294.1942ms
+2021-11-26 21:22:45.848 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:22:46.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.9360ms
+2021-11-26 21:22:50.728 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 41
+2021-11-26 21:22:50.781 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 21:22:51.165 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 21:22:51.176 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 385.6108ms
+2021-11-26 21:22:51.183 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 41 - 200 - application/json;+charset=utf-8 454.9440ms
+2021-11-26 21:26:46.104 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:26:46.559 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:26:46.561 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:26:46.562 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:26:46.563 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:26:46.564 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:26:47.417 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:26:47.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 181.4192ms
+2021-11-26 21:26:47.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:26:48.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.5395ms
+2021-11-26 21:27:01.920 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 41
+2021-11-26 21:27:01.966 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 21:27:02.722 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 21:27:02.734 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 759.0706ms
+2021-11-26 21:27:02.741 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 41 - 200 - application/json;+charset=utf-8 821.3240ms
+2021-11-26 21:30:06.084 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:30:06.533 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:30:06.534 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:30:06.535 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:30:06.536 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:30:06.538 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:30:07.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:30:07.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 140.8980ms
+2021-11-26 21:30:07.724 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:30:07.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.7282ms
+2021-11-26 21:30:12.351 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 41
+2021-11-26 21:30:12.396 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 21:30:14.037 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 21:30:14.052 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 1647.8266ms
+2021-11-26 21:30:14.061 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 41 - 200 - application/json;+charset=utf-8 1712.2864ms
+2021-11-26 21:31:00.624 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:31:01.200 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:31:01.202 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:31:01.203 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:31:01.205 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:31:01.207 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:31:01.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:31:01.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 147.3031ms
+2021-11-26 21:31:02.075 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:31:02.282 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 207.2804ms
+2021-11-26 21:31:06.249 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 41
+2021-11-26 21:31:06.289 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 21:36:59.303 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:36:59.748 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:36:59.749 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:36:59.751 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:36:59.753 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:36:59.753 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:37:00.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:37:00.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 167.0662ms
+2021-11-26 21:37:00.925 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:37:01.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.8825ms
+2021-11-26 21:42:41.605 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 21:42:42.410 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 21:42:42.411 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 21:42:42.457 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 21:42:42.485 +05:30 [INF] Hosting environment: Development
+2021-11-26 21:42:42.486 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 21:42:42.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 21:42:43.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 400.4231ms
+2021-11-26 21:42:43.410 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 21:42:43.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.0192ms
+2021-11-26 22:41:57.667 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 22:41:58.145 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 22:41:58.148 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 22:41:58.149 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 22:41:58.151 +05:30 [INF] Hosting environment: Development
+2021-11-26 22:41:58.151 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 22:41:58.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 22:41:58.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 190.0907ms
+2021-11-26 22:41:58.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 22:41:58.962 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 22:41:58.968 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 32.0110ms
+2021-11-26 22:41:58.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 22:41:59.167 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.3237ms
+2021-11-26 22:42:08.195 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 22:42:08.251 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 22:42:09.046 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 22:42:09.060 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 796.7296ms
+2021-11-26 22:42:09.068 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 872.7095ms
+2021-11-26 23:20:55.027 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 23:20:55.409 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 23:20:55.411 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 23:20:55.413 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 23:20:55.414 +05:30 [INF] Hosting environment: Development
+2021-11-26 23:20:55.417 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 23:20:56.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 23:20:56.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 128.5272ms
+2021-11-26 23:20:56.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-11-26 23:20:56.393 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-26 23:20:56.413 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 41.1699ms
+2021-11-26 23:20:56.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 23:20:56.434 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 23:20:56.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 12.5991ms
+2021-11-26 23:20:56.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 23:20:56.715 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 224.1505ms
+2021-11-26 23:21:26.439 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:21:26.475 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:21:27.162 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:21:27.174 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 693.2138ms
+2021-11-26 23:21:27.181 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 741.8851ms
+2021-11-26 23:22:10.527 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:22:10.531 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:22:10.620 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:22:10.622 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 89.6922ms
+2021-11-26 23:22:10.625 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 100.5377ms
+2021-11-26 23:23:41.690 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 23:23:42.118 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 23:23:42.122 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 23:23:42.123 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 23:23:42.125 +05:30 [INF] Hosting environment: Development
+2021-11-26 23:23:42.130 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 23:23:42.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 23:23:42.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 133.3173ms
+2021-11-26 23:23:42.868 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 23:23:42.879 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 23:23:42.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 12.0931ms
+2021-11-26 23:23:42.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 23:23:43.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.3412ms
+2021-11-26 23:23:56.122 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:23:56.154 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:23:56.440 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:23:56.448 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 288.1426ms
+2021-11-26 23:23:56.454 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 332.3189ms
+2021-11-26 23:24:47.502 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:24:47.506 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:24:48.040 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:24:48.044 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 525.8108ms
+2021-11-26 23:24:48.046 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 543.5000ms
+2021-11-26 23:24:56.988 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:24:56.995 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:24:57.042 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:24:57.044 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 47.2319ms
+2021-11-26 23:24:57.045 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 58.3836ms
+2021-11-26 23:24:59.863 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:24:59.864 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:24:59.909 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:24:59.910 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 44.587ms
+2021-11-26 23:24:59.911 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 48.7301ms
+2021-11-26 23:25:00.481 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:00.483 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:00.528 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:00.530 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 44.8495ms
+2021-11-26 23:25:00.531 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 50.0131ms
+2021-11-26 23:25:00.947 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:00.948 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:00.994 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:00.995 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 45.1874ms
+2021-11-26 23:25:00.997 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 49.9056ms
+2021-11-26 23:25:01.178 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.179 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.224 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.225 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 43.7883ms
+2021-11-26 23:25:01.226 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 48.5158ms
+2021-11-26 23:25:01.354 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.356 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.408 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.409 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 50.0535ms
+2021-11-26 23:25:01.411 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 56.5424ms
+2021-11-26 23:25:01.493 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.494 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.543 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.545 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 48.504ms
+2021-11-26 23:25:01.546 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 52.8190ms
+2021-11-26 23:25:01.635 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.637 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.681 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.682 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 43.4119ms
+2021-11-26 23:25:01.684 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 49.0812ms
+2021-11-26 23:25:01.787 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.788 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.832 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.833 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 43.236ms
+2021-11-26 23:25:01.835 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 47.9211ms
+2021-11-26 23:25:01.923 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:01.924 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:01.969 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:01.971 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 45.3611ms
+2021-11-26 23:25:01.974 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 50.7264ms
+2021-11-26 23:25:02.082 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:02.083 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:02.128 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:02.129 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 43.935ms
+2021-11-26 23:25:02.130 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 48.3940ms
+2021-11-26 23:25:02.505 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:02.508 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:02.551 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:02.553 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 42.9072ms
+2021-11-26 23:25:02.554 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 49.0998ms
+2021-11-26 23:25:02.657 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:02.658 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:02.707 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:02.708 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 48.4864ms
+2021-11-26 23:25:02.710 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 52.9972ms
+2021-11-26 23:25:02.797 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:02.807 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:02.850 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:02.851 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 42.9029ms
+2021-11-26 23:25:02.853 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 55.3438ms
+2021-11-26 23:25:05.634 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:25:05.636 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:05.859 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:05.861 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 222.5896ms
+2021-11-26 23:25:05.862 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 227.7850ms
+2021-11-26 23:25:06.519 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:25:06.521 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:06.726 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:06.727 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 204.8739ms
+2021-11-26 23:25:06.729 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 209.7739ms
+2021-11-26 23:25:31.012 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:25:31.016 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:25:31.063 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:25:31.064 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 46.273ms
+2021-11-26 23:25:31.066 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 54.2142ms
+2021-11-26 23:26:06.108 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:26:06.110 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:26:37.368 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 23:26:37.749 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 23:26:37.750 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 23:26:37.752 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 23:26:37.754 +05:30 [INF] Hosting environment: Development
+2021-11-26 23:26:37.755 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 23:26:38.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 23:26:38.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 198.0262ms
+2021-11-26 23:26:38.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 23:26:38.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.9940ms
+2021-11-26 23:26:43.099 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:26:43.131 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:26:43.801 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:26:43.808 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 671.834ms
+2021-11-26 23:26:43.814 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 715.3940ms
+2021-11-26 23:26:49.188 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:26:49.193 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:27:06.106 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 23:27:06.483 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 23:27:06.487 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 23:27:06.489 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 23:27:06.489 +05:30 [INF] Hosting environment: Development
+2021-11-26 23:27:06.490 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 23:27:06.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 23:27:06.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 133.8737ms
+2021-11-26 23:27:07.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 23:27:07.194 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.6019ms
+2021-11-26 23:27:11.297 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:27:11.329 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:27:50.435 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:27:50.444 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 39108.5904ms
+2021-11-26 23:27:50.449 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 39152.8236ms
+2021-11-26 23:28:04.228 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:28:04.232 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:28:04.295 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:28:04.297 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 62.9772ms
+2021-11-26 23:28:04.298 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 70.7909ms
+2021-11-26 23:28:15.837 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:28:15.839 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:31:05.374 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 23:31:05.750 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 23:31:05.751 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 23:31:05.753 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 23:31:05.753 +05:30 [INF] Hosting environment: Development
+2021-11-26 23:31:05.754 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-11-26 23:31:06.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 23:31:06.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 143.3538ms
+2021-11-26 23:31:06.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 23:31:06.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.4725ms
+2021-11-26 23:31:09.665 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 198
+2021-11-26 23:31:09.695 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:31:10.383 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:31:10.391 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 689.6166ms
+2021-11-26 23:31:10.399 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 198 - 200 - application/json;+charset=utf-8 734.4671ms
+2021-11-26 23:31:14.632 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379
+2021-11-26 23:31:14.638 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:31:14.887 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:31:14.889 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 249.1363ms
+2021-11-26 23:31:14.891 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 379 - 200 - application/json;+charset=utf-8 262.8928ms
+2021-11-26 23:31:25.753 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 378
+2021-11-26 23:31:25.755 +05:30 [INF] Route matched with {action = "GoogleRefresh", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] GoogleRefresh(MarshmallowPortal.Shared.UpdateTokenRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:31:25.829 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:31:25.830 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.GoogleRefresh (MarshmallowPortal.Server) in 72.7362ms
+2021-11-26 23:31:25.831 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google/refresh application/json 378 - 200 - application/json;+charset=utf-8 77.9630ms
+2021-11-26 23:31:35.603 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Login/google application/json 197
+2021-11-26 23:31:35.604 +05:30 [INF] Route matched with {action = "Google", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarshmallowPortal.Shared.LoginResponse] Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 23:31:36.099 +05:30 [INF] Executing ObjectResult, writing value of type 'MarshmallowPortal.Shared.LoginResponse'.
+2021-11-26 23:31:36.100 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Google (MarshmallowPortal.Server) in 493.4465ms
+2021-11-26 23:31:36.101 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Login/google application/json 197 - 200 - application/json;+charset=utf-8 498.1662ms

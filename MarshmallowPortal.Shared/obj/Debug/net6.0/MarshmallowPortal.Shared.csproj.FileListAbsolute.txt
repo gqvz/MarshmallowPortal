@@ -5,9 +5,8 @@ C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPo
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.AssemblyInfoInputs.cache
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.AssemblyInfo.cs
-C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.ImplicitNamespaceImports.cs
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.csproj.CoreCompileInputs.cache
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.dll
-C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\refint\MarshmallowPortal.Shared.dll
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\MarshmallowPortal.Shared.pdb
 C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\obj\Debug\net6.0\ref\MarshmallowPortal.Shared.dll
+C:\dev\MarshmallowPortal\MarshmallowPortal.Shared\bin\Debug\net6.0\ref\MarshmallowPortal.Shared.dll
