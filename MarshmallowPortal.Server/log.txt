@@ -131,3 +131,130 @@ System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadat
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
 2021-11-24 21:57:31.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 137.9655ms
+2021-11-26 18:47:36.516 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 18:47:36.547 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 18:47:36.593 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 18:47:36.645 +05:30 [INF] Hosting environment: Development
+2021-11-26 18:47:36.648 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 18:47:42.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 18:47:43.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 866.2420ms
+2021-11-26 18:47:43.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 18:47:43.519 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 18:47:43.626 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 18:47:43.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 197.7646ms
+2021-11-26 18:47:43.802 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 18:47:44.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 504.5233ms
+2021-11-26 18:50:23.106 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 18:50:23.143 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 18:50:23.184 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 18:50:23.186 +05:30 [INF] Hosting environment: Development
+2021-11-26 18:50:23.188 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 18:50:25.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 18:50:25.951 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 220.0792ms
+2021-11-26 18:50:26.183 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-11-26 18:50:26.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 18:50:26.275 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-26 18:50:26.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 18:50:26.297 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 18:50:26.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 114.7058ms
+2021-11-26 18:50:26.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 47.8301ms
+2021-11-26 18:50:26.326 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 18:50:26.680 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 385.4653ms
+2021-11-26 18:53:23.102 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 18:53:23.121 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 18:53:23.124 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 18:53:23.126 +05:30 [INF] Hosting environment: Development
+2021-11-26 18:53:23.126 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 18:53:25.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 18:53:26.155 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 222.9556ms
+2021-11-26 18:53:26.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-11-26 18:53:26.353 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-26 18:53:26.355 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 57.2252ms
+2021-11-26 18:53:26.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 18:53:26.394 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 18:53:26.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 23.5688ms
+2021-11-26 18:53:26.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 18:53:26.477 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 18:53:26.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 114.7741ms
+2021-11-26 18:55:53.872 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 18:55:53.893 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 18:55:53.897 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 18:55:53.898 +05:30 [INF] Hosting environment: Development
+2021-11-26 18:55:53.899 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 18:55:56.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-11-26 18:55:56.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 211.1789ms
+2021-11-26 18:55:56.885 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-11-26 18:55:56.906 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-26 18:55:56.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 23.6819ms
+2021-11-26 18:55:56.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-11-26 18:55:56.949 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-11-26 18:55:56.951 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 8.2882ms
+2021-11-26 18:55:57.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-11-26 18:55:57.364 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not load type 'Microsoft.AspNetCore.Http.Metadata.ITagsMetadata' from assembly 'Microsoft.AspNetCore.Http.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultTagsSelector(ApiDescription apiDescription)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions.DefaultSortKeySelector(ApiDescription apiDescription) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x600012d+0x6
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count) in System.Linq.dll:token 0x600040b+0x10
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000401+0x0
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count) in System.Linq.dll:token 0x6000402+0x0
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext() in System.Linq.dll:token 0x6000391+0x3d
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer) in System.Linq.dll:token 0x6000366+0x2b
+   at System.Linq.GroupedEnumerable`2.GetEnumerator() in System.Linq.dll:token 0x600035f+0x0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f8+0x3a
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath) in Swashbuckle.AspNetCore.SwaggerGen.dll:token 0x60000f6+0xe6
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in Swashbuckle.AspNetCore.Swagger.dll:token 0x6000009+0xe2
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) in Microsoft.AspNetCore.Diagnostics.dll:token 0x60000aa+0x82
+2021-11-26 18:55:57.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 500 - text/plain 328.5671ms
+2021-11-26 18:56:50.248 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/login/index - -
+2021-11-26 18:56:50.260 +05:30 [INF] Executing endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 18:56:50.290 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.LoginController (MarshmallowPortal.Server).
+2021-11-26 18:56:50.560 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-11-26 18:56:50.574 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server) in 275.892ms
+2021-11-26 18:56:50.579 +05:30 [INF] Executed endpoint 'MarshmallowPortal.Server.Controllers.LoginController.Index (MarshmallowPortal.Server)'
+2021-11-26 18:56:50.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/login/index - - - 401 - application/problem+json;+charset=utf-8 341.7000ms
+2021-11-26 19:03:20.427 +05:30 [INF] Now listening on: https://localhost:5001
+2021-11-26 19:03:20.446 +05:30 [INF] Now listening on: http://localhost:5000
+2021-11-26 19:03:20.449 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 19:03:20.450 +05:30 [INF] Hosting environment: Development
+2021-11-26 19:03:20.451 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server
+2021-11-26 19:03:41.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-26 19:03:41.985 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 108.5116ms

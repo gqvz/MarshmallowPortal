@@ -14,8 +14,7 @@ public class LoginController : ControllerBase
         _context = context;
     }
     
-    [HttpGet]
-    [Route("[controller]/index")]
+    [HttpGet("index")]
     public IActionResult Index()
     {
         return Unauthorized();

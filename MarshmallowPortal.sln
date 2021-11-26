@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Server", "MarshmallowPortal.Server\MarshmallowPortal.Server.csproj", "{0A74E315-231D-498C-A109-66271FE697FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Server.Tests", "MarshmallowPortal.Server.Tests\MarshmallowPortal.Server.Tests.csproj", "{7479B3FB-CDB9-46B0-9D1E-471E4E3244E7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Shared", "MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj", "{5AB9879E-79DB-4BAD-B175-2CF13D27BB84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Client", "MarshmallowPortal.Client\MarshmallowPortal.Client.csproj", "{1D1F7C30-96E8-488E-B28F-339BC90CA382}"
@@ -18,10 +16,6 @@ Global
 		{0A74E315-231D-498C-A109-66271FE697FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A74E315-231D-498C-A109-66271FE697FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A74E315-231D-498C-A109-66271FE697FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7479B3FB-CDB9-46B0-9D1E-471E4E3244E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7479B3FB-CDB9-46B0-9D1E-471E4E3244E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7479B3FB-CDB9-46B0-9D1E-471E4E3244E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7479B3FB-CDB9-46B0-9D1E-471E4E3244E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5AB9879E-79DB-4BAD-B175-2CF13D27BB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5AB9879E-79DB-4BAD-B175-2CF13D27BB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB9879E-79DB-4BAD-B175-2CF13D27BB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
