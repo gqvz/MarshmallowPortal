@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="MarshmallowPortal.Client/App.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
         <entry key="MarshmallowPortal.Client/Views/MainWindow.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
       </map>
     </option>
