@@ -24,10 +24,10 @@ jobs:
     - name: Publish
       run: |
         cd MarshmallowPortal.Client
-        dotnet publish -c Release -p:PublishSingleFile=true --self-contained true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
+        dotnet publish -c Release -p:PublishSingleFile=true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
         cd ..
         cd MarshmallowPortal.Server
-        dotnet publish -c Release -p:PublishSingleFile=true --self-contained true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
+        dotnet publish -c Release -p:PublishSingleFile=true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
         cd ..
     - uses: actions/upload-artifact@v2
       with:
