@@ -32,9 +32,9 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: Client.exe
-        path: MarshmallowPortal.Client\bin\Release\net6.0\win10-x64\publish\MarshmallowPortal.Client.exe
+        path: MarshmallowPortal.Client/bin/Release/net6.0/win10-x64/publish/MarshmallowPortal.Client.exe
         
     - uses: actions/upload-artifact@v2
       with:
         name: Server.exe
-        path: MarshmallowPortal.Server\bin\Release\net6.0\win10-x64\publish\MarshmallowPortal.Server.exe
+        path: MarshmallowPortal.Server/bin/Release/net6.0/win10-x64/publish/MarshmallowPortal.Server.exe
