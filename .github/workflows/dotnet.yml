@@ -1,0 +1,40 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.x.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Publish
+      run: |
+        cd MarshmallowPortal.Client
+        dotnet publish -c Release -p:PublishSingleFile=true --self-contained true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
+        cd ..
+        cd MarshmallowClient.Server
+        dotnet publish -c Release -p:PublishSingleFile=true --self-contained true -p:RuntimeIdentifier=win10-x64 -p:IncludeNativeLibrariesForSelfExtract=true
+        cd ..
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Client.exe
+        path: MarshmallowPortal.Client\bin\Release\net6.0\win10-x64\publish\MarshmallowPortal.Client.exe
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Server.exe
+        path: MarshmallowPortal.Server\bin\Release\net6.0\win10-x64\publish\MarshmallowPortal.Server.exe
