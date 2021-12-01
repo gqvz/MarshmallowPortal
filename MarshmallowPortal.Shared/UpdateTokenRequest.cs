@@ -3,4 +3,5 @@
 public class UpdateTokenRequest : Request
 {
     public string OldToken { get; init; }
+    public int ExpireTime { get; init; }
 }

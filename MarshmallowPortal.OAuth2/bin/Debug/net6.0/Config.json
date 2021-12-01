@@ -1,0 +1,14 @@
+﻿{
+  "Google": {
+    "ClientId": "1014028450593-3488rb7a1naenckr526ptl14t40ngl2f.apps.googleusercontent.com",
+    "ClientSecret": "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"
+  },
+  "Discord": {
+    "ClientId": "914081312837607464",
+    "ClientSecret": "O3pSSts3UFYEkTzLINLx87d03JJI9phv"
+  },
+  "Github": {
+    "ClientId": "bd50fdfd8c9cbef563da",
+    "ClientSecret": "1ba0cc0bb3ea0474ea2c4a9564b92fae12569a8d"
+  }
+}

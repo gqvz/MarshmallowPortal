@@ -3,6 +3,8 @@
 public enum TokenType
 {
     Google = 1,
+    Github = 2,
+    Discord = 3
 }
 
 public class Request

@@ -6,7 +6,6 @@ public class MainWindowViewModel : ViewModelBase
 {
     private bool _logInActive;
     private bool _mainWindowEnabled;
-    private float _sidebarWidth;
 
     public bool LogInActive
     {
@@ -23,7 +22,7 @@ public class MainWindowViewModel : ViewModelBase
     public MainWindowViewModel()
     {
         // TODO: Implement
-        LogInActive = false;
-        MainWindowEnabled = true;
+        LogInActive = true;
+        MainWindowEnabled = false;
     }
 }

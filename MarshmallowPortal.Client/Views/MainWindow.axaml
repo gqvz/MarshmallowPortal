@@ -34,7 +34,11 @@
                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" Name="AllTheContent">
                 <StackPanel Name="LoginWindow" VerticalAlignment="Center" Spacing="20"  IsEnabled="{Binding LogInActive}" IsVisible="{Binding LogInActive}">
                     <TextBlock Text="Please Login using your browser" TextAlignment="Center" FontSize="30"/>
-                    <Button Classes="Modern" Content="Open Browser" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <StackPanel Name="LoginButtons" Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-github" FontSize="25"/>
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-google" FontSize="25"/>
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-discord" FontSize="25"/>
+                    </StackPanel>
                 </StackPanel>
                 <Panel Name="MainWindow" IsEnabled="{Binding MainWindowEnabled}" IsVisible="{Binding MainWindowEnabled}">
                     <Grid ColumnDefinitions="5*, 1, 95*">
