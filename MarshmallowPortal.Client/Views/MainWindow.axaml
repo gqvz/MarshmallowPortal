@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:converters="clr-namespace:MarshmallowPortal.Client.Converters"
         xmlns:viewModels="clr-namespace:MarshmallowPortal.Client.ViewModels"
+        xmlns:controls="clr-namespace:MarshmallowPortal.Client.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MarshmallowPortal.Client.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -35,29 +36,41 @@
                 <StackPanel Name="LoginWindow" VerticalAlignment="Center" Spacing="20"  IsEnabled="{Binding LogInActive}" IsVisible="{Binding LogInActive}">
                     <TextBlock Text="Please login using your browser" FontFamily="{StaticResource NiceFont}" TextAlignment="Center" FontSize="30"/>
                     <StackPanel Name="LoginButtons" Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-github" FontSize="25"/>
-                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-google" FontSize="25"/>
-                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-discord" FontSize="25"/>
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-github" FontSize="25" Command="{Binding LoginWithGithubClicked}"/>
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-google" FontSize="25" Command="{Binding LoginWithGoogleClicked}"/>
+                        <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-discord" FontSize="25" Command="{Binding LoginWithDiscordClicked}"/>
                     </StackPanel>
                 </StackPanel>
-                <Panel Name="MainWindow" IsEnabled="{Binding MainWindowEnabled}" IsVisible="{Binding MainWindowEnabled}">
+                <Panel Name="MainWindow" IsEnabled="{Binding !LogInActive}" IsVisible="{Binding !LogInActive}">
                     <Grid ColumnDefinitions="5*, 1, 95*">
                         <Panel Grid.Column="0" Name="Sidebar">
                             <Button i:Attached.Icon="fas fb-list" Classes="Modern" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 5 0 0"/>
                             <Button i:Attached.Icon="fas fa-cog" Classes="Modern" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 0 0 5"/>
                         </Panel>
                         <Separator Grid.Column="1" Background="#535861"/>
-                        <Grid Grid.Column="2" RowDefinitions="9*, 95*">
+                        <Grid Grid.Column="2" RowDefinitions="9*, 2, 84*, 9*">
                             <Panel Grid.Row="0">
-                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
-                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
-                                <Button Classes="Modern" Content="Add Question" Margin="0 5 15 0" HorizontalAlignment="Right"/>
+                                <ToggleButton Checked="AddQuestionToggle_OnChecked" Unchecked="AddQuestionToggle_OnUnChecked" Name="AddQuestionToggle" Classes="Modern" FontSize="19" i:Attached.Icon="fas fa-plus" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 5 15 0">
+                                    <ToggleButton.Flyout>
+                                        <Flyout Closed="FlyoutBase_OnClosing" Placement="BottomEdgeAlignedRight" ShowMode="TransientWithDismissOnPointerMoveAway">
+                                            <StackPanel Spacing="10">
+                                                <Button Classes="Modern" Content="Assertion Reason" HorizontalAlignment="Center" VerticalAlignment="Center" Width="133" HorizontalContentAlignment="Center" FontFamily="{StaticResource NiceFont}"/>
+                                                <Button Classes="Modern" Content="Case study" HorizontalAlignment="Center" VerticalAlignment="Center" Width="133" HorizontalContentAlignment="Center" FontFamily="{StaticResource NiceFont}"/>
+                                                <Button Classes="Modern" Content="Standalone" HorizontalAlignment="Center" VerticalAlignment="Center" Width="133" HorizontalContentAlignment="Center" FontFamily="{StaticResource NiceFont}"/>
+                                            </StackPanel>
+                                        </Flyout>
+                                    </ToggleButton.Flyout>
+                                </ToggleButton>
                             </Panel>
-                            <ScrollViewer Grid.Row="1">
+                            <Separator Grid.Row="1" Background="#535861"/>
+                            <ScrollViewer Grid.Row="2" Margin="5 5 5 0">
                                 <StackPanel Name="QuestionArea">
-                                    
+                                    <controls:Question QuestionText="HHAHAHAHHA"/>
                                 </StackPanel>
                             </ScrollViewer>
+                            <Panel Grid.Row="3">
+                                <Button i:Attached.Icon="fas fa-upload" HorizontalAlignment="Right" Margin="0 0 8 8" Classes="Modern" FontSize="22.8" VerticalAlignment="Bottom"/>
+                            </Panel>
                         </Grid>
                     </Grid>
                 </Panel>

@@ -1,31 +1,59 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+>
     <Design.PreviewWith>
-        <Border Padding="20">
-            <Border Width="100" Height="100">
-                <Button Classes="Modern" Content="Click Me!"></Button>
-            </Border>
+        <Border Padding="200">
+            <Button>
+                Hi 
+                <Button.Flyout>
+                    <Flyout>
+                        <Button>hi1</Button>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
         </Border>
     </Design.PreviewWith>
+    
+    <Style Selector="ToggleButton.Modern">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    <Style Selector="ToggleButton.Modern:pointerover">
+        <Setter Property="RenderTransform" Value="scale(1.1)"/>
+    </Style>
+    <Style Selector="ToggleButton.Modern:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    <Style Selector="ToggleButton.Modern:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
+    </Style>
+    <Style Selector="ToggleButton.Modern:pressed">
+        <Setter Property="RenderTransform" Value="scale(1.2)"/>
+    </Style>
     
     <Style Selector="Button.Modern">
         <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
     </Style>
-    
     <Style Selector="Button.Modern:pointerover">
         <Setter Property="RenderTransform" Value="scale(1.1)"/>
     </Style>
-    
     <Style Selector="Button.Modern:pointerover /template/ ContentPresenter">
         <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
     </Style>
-    
-        
     <Style Selector="Button.Modern:pressed /template/ ContentPresenter">
         <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}"/>
     </Style>
-    
     <Style Selector="Button.Modern:pressed">
         <Setter Property="RenderTransform" Value="scale(1.2)"/>
+    </Style>
+
+    <Style Selector="ToggleButton i|Icon">
+         <Setter Property="Transitions">
+              <Transitions>
+                   <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.25"></TransformOperationsTransition>
+              </Transitions>
+         </Setter>
+    </Style> 
+    <Style Selector="ToggleButton[IsChecked=True] i|Icon">
+         <Setter Property="RenderTransform" Value="rotate(-45deg)"></Setter>
     </Style>
 </Styles>

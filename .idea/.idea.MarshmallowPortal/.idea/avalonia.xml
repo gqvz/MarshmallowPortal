@@ -4,6 +4,9 @@
     <option name="projectPerEditor">
       <map>
         <entry key="MarshmallowPortal.Client/App.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
+        <entry key="MarshmallowPortal.Client/Controls/Question.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
+        <entry key="MarshmallowPortal.Client/Controls/QuestionTemplate.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
+        <entry key="MarshmallowPortal.Client/Styles/Button.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
         <entry key="MarshmallowPortal.Client/Views/MainWindow.axaml" value="MarshmallowPortal.Client/MarshmallowPortal.Client.csproj" />
       </map>
     </option>

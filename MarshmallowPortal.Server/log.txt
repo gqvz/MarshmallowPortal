@@ -1048,3 +1048,71 @@ System.InvalidOperationException: The view 'Index' was not found. The following 
 2021-12-01 14:18:19.079 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
 2021-12-01 14:18:19.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 182.6473ms
 2021-12-01 14:18:19.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.0781ms
+2021-12-06 20:32:11.579 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-06 20:32:12.384 +05:30 [INF] Now listening on: https://localhost:5001
+2021-12-06 20:32:12.386 +05:30 [INF] Now listening on: http://localhost:5000
+2021-12-06 20:32:12.388 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-06 20:32:12.389 +05:30 [INF] Hosting environment: Development
+2021-12-06 20:32:12.390 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-12-06 20:32:13.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2021-12-06 20:32:13.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 299.3720ms
+2021-12-06 20:32:13.939 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-12-06 20:32:14.037 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 97.8638ms
+2021-12-06 20:32:14.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-12-06 20:32:14.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-12-06 20:32:14.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-12-06 20:32:14.420 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-12-06 20:32:14.427 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-12-06 20:32:14.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 234.9590ms
+2021-12-06 20:32:14.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 236.2925ms
+2021-12-06 20:32:14.627 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-12-06 20:32:14.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 440.1165ms
+2021-12-06 20:32:14.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-12-06 20:32:14.890 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-12-06 20:32:14.894 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 200 665 image/png 9.9271ms
+2021-12-06 20:32:14.972 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-12-06 20:32:15.103 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.2324ms
+2021-12-06 20:32:19.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-12-06 20:32:19.039 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-12-06 20:32:19.068 +05:30 [INF] Executing ViewResult, running view Index.
+2021-12-06 20:32:19.452 +05:30 [INF] Executed ViewResult - view Index executed in 393.5448ms.
+2021-12-06 20:32:19.651 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-12-06 20:32:19.767 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 691.3839ms
+2021-12-06 20:32:19.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 120.9313ms
+2021-12-06 20:32:19.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 916.0572ms
+2021-12-06 20:32:35.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-12-06 20:32:35.277 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-12-06 20:32:35.283 +05:30 [INF] Executing ViewResult, running view Index.
+2021-12-06 20:32:35.288 +05:30 [INF] Executed ViewResult - view Index executed in 5.0541ms.
+2021-12-06 20:32:35.305 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 22.9533ms
+2021-12-06 20:32:35.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 45.8154ms
+2021-12-11 16:53:12.124 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-11 16:53:12.614 +05:30 [INF] Now listening on: https://localhost:5001
+2021-12-11 16:53:12.616 +05:30 [INF] Now listening on: http://localhost:5000
+2021-12-11 16:53:12.617 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-11 16:53:12.618 +05:30 [INF] Hosting environment: Development
+2021-12-11 16:53:12.619 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2021-12-11 16:53:15.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2021-12-11 16:53:15.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 332.7716ms
+2021-12-11 16:53:15.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-12-11 16:53:16.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 152.3876ms
+2021-12-11 16:53:16.408 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-12-11 16:53:16.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-12-11 16:53:16.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-12-11 16:53:16.786 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-12-11 16:53:16.788 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-12-11 16:53:16.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 373.5701ms
+2021-12-11 16:53:16.850 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-12-11 16:53:16.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 447.0334ms
+2021-12-11 16:53:16.863 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 439.1664ms
+2021-12-11 16:53:17.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-12-11 16:53:17.023 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-12-11 16:53:17.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 200 665 image/png 5.7272ms
+2021-12-11 16:53:17.059 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-12-11 16:53:17.196 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.2926ms
+2021-12-11 16:53:23.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-12-11 16:53:23.841 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2021-12-11 16:53:23.857 +05:30 [INF] Executing ViewResult, running view Index.
+2021-12-11 16:53:23.971 +05:30 [INF] Executed ViewResult - view Index executed in 116.7584ms.
+2021-12-11 16:53:23.974 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 131.0097ms
+2021-12-11 16:53:23.977 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 154.2135ms
