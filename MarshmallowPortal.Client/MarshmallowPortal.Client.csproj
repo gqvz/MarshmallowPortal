@@ -27,4 +27,16 @@
         <ProjectReference Include="..\MarshmallowPortal.OAuth2\MarshmallowPortal.OAuth2.csproj" />
         <ProjectReference Include="..\MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Update="Controls\Questions.axaml.ViewModel.cs">
+        <DependentUpon>Question.axaml</DependentUpon>
+      </Compile>
+      <Compile Update="Controls\Answer.axaml.ViewModel.cs">
+        <DependentUpon>Answer.axaml</DependentUpon>
+      </Compile>
+      <Compile Update="Controls\Section.axaml.ViewMode.cs">
+        <DependentUpon>Section.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
 </Project>

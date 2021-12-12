@@ -1,18 +1,29 @@
-﻿using Avalonia.Controls;
+﻿using System.Collections.Generic;
+using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace MarshmallowPortal.Client.Controls;
 
 public class Question : UserControl
 {
+    public readonly QuestionsViewModel ViewModel = new();
+
+    public string QuestionText
+    {
+        get => ViewModel.QuestionText;
+        set => ViewModel.QuestionText = value;
+    }
     
-    
-    public string QuestionText { get; set; } = "the oauth2 wrapper took me way longer than it should have";
-    public string QuestionNumber { get; set; } = "0.";
+    public IEnumerable<Answer> Answers
+    {
+        get => ViewModel.Answers;
+        set => ViewModel.Answers = value;
+    }
+
     public Question()
     {
         InitializeComponent();
-        DataContext = this;
+        DataContext = ViewModel;
     }
 
     private void InitializeComponent()

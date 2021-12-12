@@ -4,19 +4,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:controls="clr-namespace:MarshmallowPortal.Client.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="MarshmallowPortal.Client.Controls.Question" x:DataType="controls:Question">
-    <StackPanel>
-        <Expander>
-            <DockPanel>
-                <TextBlock Text="{Binding QuestionNumber}" FontSize="35" Margin="0 0 5 0"/>
-                <TextBox Text="{Binding QuestionText}" FontSize="25"/>
-            </DockPanel>
-        </Expander>
-        <Expander>
-            <DockPanel>
-                <TextBlock Text="{Binding QuestionNumber}" FontSize="35" Margin="0 0 5 0"/>
-                <TextBox Text="{Binding QuestionText}" FontSize="25"/>
-            </DockPanel>
-        </Expander>
-    </StackPanel>
+             x:Class="MarshmallowPortal.Client.Controls.Question">
+    
+    <UserControl.DataContext>
+        <controls:QuestionsViewModel/>
+    </UserControl.DataContext>
+    
+    <Grid RowDefinitions="*">
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <Expander FontFamily="{StaticResource NiceFont}" Background="#20242C">
+                <Expander.Header>
+                    <MultiBinding StringFormat="{}{0} {1}">
+                        <Binding Path="QuestionNumber"/>
+                        <Binding Path="QuestionText"/>
+                    </MultiBinding>
+                </Expander.Header>
+                <StackPanel>
+                    <TextBox Text="{Binding QuestionText}" FontSize="25" />
+                    <Expander Header="Answers" HorizontalAlignment="Stretch" Margin="0 5 0 0">
+                        <Menu Items="{Binding Answers}"/>
+                    </Expander>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </Grid>
 </UserControl>

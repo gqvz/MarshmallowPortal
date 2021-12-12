@@ -3,9 +3,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:converters="clr-namespace:MarshmallowPortal.Client.Converters"
         xmlns:viewModels="clr-namespace:MarshmallowPortal.Client.ViewModels"
-        xmlns:controls="clr-namespace:MarshmallowPortal.Client.Controls"
+        xmlns:uc="clr-namespace:MarshmallowPortal.Client.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MarshmallowPortal.Client.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -13,25 +12,22 @@
         ExtendClientAreaToDecorationsHint="True"
         MinHeight="450"
         MinWidth="800">
+    
     <Window.Styles>
         <StyleInclude Source="/Styles/Button.axaml"/>
     </Window.Styles>
-    
-    <Window.Resources>
-        <FontFamily x:Key="NiceFont">/Assets/Fonts/SourceSansPro/SourceSansPro-Regular.ttf#Source Sans Pro</FontFamily>
-        <converters:SubtractConverter x:Key="Sub"/>
-    </Window.Resources>
     
     <Design.DataContext>
         <viewModels:MainWindowViewModel/>
     </Design.DataContext>
     
     <Panel Name="Content">
-        <Grid RowDefinitions="30, 100*" RowSpan="0">
+        <Grid RowDefinitions="30, 1, *" RowSpan="0">
             <Panel Grid.Row="0" Name="TitleBar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" IsHitTestVisible="False">
-                <TextBlock Text="Marshmallow Portal" FontFamily="{StaticResource NiceFont}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="5 5 0 0"/>
+                <TextBlock Text="Marshmallow Portal" FontFamily="{StaticResource NiceFont}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="5 0 0 0"/>
             </Panel>
-            <Panel Grid.Row="1"
+            <Separator Grid.Row="1" Background="#535861"/>
+            <Panel Grid.Row="2"
                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" Name="AllTheContent">
                 <StackPanel Name="LoginWindow" VerticalAlignment="Center" Spacing="20"  IsEnabled="{Binding LogInActive}" IsVisible="{Binding LogInActive}">
                     <TextBlock Text="Please login using your browser" FontFamily="{StaticResource NiceFont}" TextAlignment="Center" FontSize="30"/>
@@ -42,15 +38,15 @@
                     </StackPanel>
                 </StackPanel>
                 <Panel Name="MainWindow" IsEnabled="{Binding !LogInActive}" IsVisible="{Binding !LogInActive}">
-                    <Grid ColumnDefinitions="5*, 1, 95*">
+                    <Grid ColumnDefinitions="50, 1, *">
                         <Panel Grid.Column="0" Name="Sidebar">
                             <Button i:Attached.Icon="fas fb-list" Classes="Modern" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 5 0 0"/>
                             <Button i:Attached.Icon="fas fa-cog" Classes="Modern" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="{Binding Converter={StaticResource Sub}, Path=$parent.Bounds.Width, ConverterParameter=30}" Margin="0 0 0 5"/>
                         </Panel>
                         <Separator Grid.Column="1" Background="#535861"/>
-                        <Grid Grid.Column="2" RowDefinitions="9*, 2, 84*, 9*">
+                        <Grid Grid.Column="2" RowDefinitions="45, 1, *, 1, 45">
                             <Panel Grid.Row="0">
-                                <ToggleButton Checked="AddQuestionToggle_OnChecked" Unchecked="AddQuestionToggle_OnUnChecked" Name="AddQuestionToggle" Classes="Modern" FontSize="19" i:Attached.Icon="fas fa-plus" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 5 15 0">
+                                <ToggleButton Checked="AddQuestionToggle_OnChecked" Unchecked="AddQuestionToggle_OnUnChecked" Name="AddQuestionToggle" Classes="Modern" FontSize="20" i:Attached.Icon="fas fa-plus" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 6 0">
                                     <ToggleButton.Flyout>
                                         <Flyout Closed="FlyoutBase_OnClosing" Placement="BottomEdgeAlignedRight" ShowMode="TransientWithDismissOnPointerMoveAway">
                                             <StackPanel Spacing="10">
@@ -65,11 +61,104 @@
                             <Separator Grid.Row="1" Background="#535861"/>
                             <ScrollViewer Grid.Row="2" Margin="5 5 5 0">
                                 <StackPanel Name="QuestionArea">
-                                    <controls:Question QuestionText="HHAHAHAHHA"/>
+                                    <uc:Section HeaderText="Section A">
+                                        <uc:Section.Questions>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question><uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                            <uc:Question QuestionText="ADAWDAWD">
+                                                <uc:Question.Answers>
+                                                    <uc:Answer AnswerText="hhaha"/>
+                                                </uc:Question.Answers>
+                                            </uc:Question>
+                                        </uc:Section.Questions>
+                                    </uc:Section>
                                 </StackPanel>
                             </ScrollViewer>
-                            <Panel Grid.Row="3">
-                                <Button i:Attached.Icon="fas fa-upload" HorizontalAlignment="Right" Margin="0 0 8 8" Classes="Modern" FontSize="22.8" VerticalAlignment="Bottom"/>
+                            <Separator Grid.Row="3" Background="#535861"/>
+                            <Panel Grid.Row="4">
+                                <Button i:Attached.Icon="fas fa-upload" HorizontalAlignment="Right" Margin="0 0 6 0" Classes="Modern" FontSize="20" VerticalAlignment="Center"/>
                             </Panel>
                         </Grid>
                     </Grid>

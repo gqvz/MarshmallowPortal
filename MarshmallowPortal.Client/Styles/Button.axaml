@@ -3,7 +3,7 @@
 >
     <Design.PreviewWith>
         <Border Padding="200">
-            <Button>
+            <Button Classes="Modern">
                 Hi 
                 <Button.Flyout>
                     <Flyout>

@@ -1,11 +1,17 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:client="clr-namespace:MarshmallowPortal.Client"
+             xmlns:converters="clr-namespace:MarshmallowPortal.Client.Converters"
              x:Class="MarshmallowPortal.Client.App">
     <Application.DataTemplates>
         <client:ViewLocator/>
     </Application.DataTemplates>
 
+    <Application.Resources>
+        <FontFamily x:Key="NiceFont">/Assets/Fonts/SourceSansPro/SourceSansPro-Regular.ttf#Source Sans Pro</FontFamily>
+        <converters:SubtractConverter x:Key="Sub"/>
+    </Application.Resources>
+    
     <Application.Styles>
         <FluentTheme Mode="Dark"/>
     </Application.Styles>
