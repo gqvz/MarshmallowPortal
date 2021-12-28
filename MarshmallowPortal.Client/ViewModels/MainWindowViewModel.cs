@@ -1,12 +1,14 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Net;
-using System.Net.Sockets;
 using System.Threading;
+using System.Threading.Tasks;
 using MarshmallowPortal.OAuth2.Discord;
 using MarshmallowPortal.OAuth2.Github;
 using MarshmallowPortal.OAuth2.Google;
 using ReactiveUI;
-using Serilog;
 
 namespace MarshmallowPortal.Client.ViewModels;
 
@@ -63,7 +65,7 @@ public class MainWindowViewModel : ViewModelBase
 
     public MainWindowViewModel()
     {
-        LogInActive = false;
+        LogInActive = true;
         var googleCredentials = new GoogleCredentials("1014028450593-3488rb7a1naenckr526ptl14t40ngl2f.apps.googleusercontent.com", null!);
         _googleService = new GoogleOAuth2Service(googleCredentials, new []{GoogleOAuth2Service.Email, GoogleOAuth2Service.Profile});
         var discordCredentials = new DiscordCredentials("914081312837607464", null!);
@@ -71,15 +73,24 @@ public class MainWindowViewModel : ViewModelBase
         var githubCredentials = new GithubCredentials("bd50fdfd8c9cbef563da", null!);
         _githubService = new GithubOAuth2Service(githubCredentials, new []{GithubOAuth2Service.User});
         _state = _githubService.GetState();
-        new Thread(StartTheListener){IsBackground = true}.Start();
+        Task.Run(StartTheListener);
     }
 
-    private void StartTheListener()
+    private async Task StartTheListener()
     {
-        /*
         var listener = new HttpListener();
-        listener.Prefixes.Add("http://localhost:6001/discord/");
+        listener.Prefixes.Add("http://localhost:6001/");
         listener.Start();
-    */
+        var context = listener.GetContext();
+        /*
+        if (context.Request.QueryString["state"] != _state)
+            throw new Exception("oh well");
+        */
+        var code = context.Request.QueryString["code"];
+        var sr = new StreamWriter(context.Response.OutputStream);
+        sr.Write("<h1>close</h1>");
+        sr.Close();
+        context.Response.Close();
+        LogInActive = false;
     }
 }
