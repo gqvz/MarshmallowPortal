@@ -6,9 +6,3 @@ public enum TokenType
     Github = 2,
     Discord = 3
 }
-
-public class Request
-{
-    public string Token { get; init; }
-    public TokenType TokenType { get; init; }
-}

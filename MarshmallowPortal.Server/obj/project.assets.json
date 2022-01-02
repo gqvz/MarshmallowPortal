@@ -1622,6 +1622,9 @@
       "MarshmallowPortal.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MarshmallowPortal.OAuth2": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MarshmallowPortal.Shared.dll": {}
         },

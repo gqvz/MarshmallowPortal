@@ -27,7 +27,6 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "MarshmallowPortal.Server", Version = "v1"}); });
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite("Data Source=Db/app.db"));
 
 builder.Configuration
     .AddEnvironmentVariables()
@@ -36,21 +35,21 @@ builder.Configuration
 
 builder.Services.AddSingleton(_ =>
 {
-    var options = builder.Configuration.Get<GoogleOptions>();
+    var options = builder.Configuration.GetSection("GoogleOptions").Get<GoogleOptions>();
     var credentials = new GoogleCredentials(options.ClientId, options.ClientSecret);
     return credentials;
 });
 
 builder.Services.AddSingleton(_ =>
 {
-    var options = builder.Configuration.Get<DiscordOptions>();
+    var options = builder.Configuration.GetSection("DiscordOptions").Get<DiscordOptions>();
     var credentials = new DiscordCredentials(options.ClientId, options.ClientSecret);
     return credentials;
 });
 
 builder.Services.AddSingleton(_ =>
 {
-    var options = builder.Configuration.Get<GithubOptions>();
+    var options = builder.Configuration.GetSection("GithubOptions").Get<GithubOptions>();
     var credentials = new GithubCredentials(options.ClientId, options.ClientSecret);
     return credentials;
 });
@@ -78,6 +77,8 @@ builder.Services.AddSingleton(provider =>
     var service = new GithubOAuth2Service(credentials, new[] {GithubOAuth2Service.User});
     return service;
 });
+
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite("Data Source=Db/app.db"));
 
 var app = builder.Build();
 

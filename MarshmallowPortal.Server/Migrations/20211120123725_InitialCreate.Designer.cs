@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace StuDentist.Server.Migrations
+namespace MarhsmallowPortal.Server.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     [Migration("20211120123725_InitialCreate")]

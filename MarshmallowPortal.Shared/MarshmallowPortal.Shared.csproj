@@ -5,4 +5,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MarshmallowPortal.OAuth2\MarshmallowPortal.OAuth2.csproj" />
+    </ItemGroup>
+
 </Project>

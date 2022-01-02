@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace StuDentist.Server.Migrations
+namespace MarhsmallowPortal.Server.Migrations
 {
     public partial class InitialCreate : Migration
     {

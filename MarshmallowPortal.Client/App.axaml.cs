@@ -1,8 +1,10 @@
+using System.Reflection.Emit;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using MarshmallowPortal.Client.ViewModels;
 using MarshmallowPortal.Client.Views;
+using Splat;
 
 namespace MarshmallowPortal.Client;
 

@@ -24,5 +24,12 @@
       <ProjectReference Include="..\MarshmallowPortal.OAuth2\MarshmallowPortal.OAuth2.csproj" />
       <ProjectReference Include="..\MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <Content Remove="Config.json" />
+      <None Include="Config.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 
 </Project>

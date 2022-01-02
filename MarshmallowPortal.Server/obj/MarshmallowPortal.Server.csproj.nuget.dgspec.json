@@ -221,7 +221,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\dev\\MarshmallowPortal\\MarshmallowPortal.OAuth2\\MarshmallowPortal.OAuth2.csproj": {
+                "projectPath": "C:\\dev\\MarshmallowPortal\\MarshmallowPortal.OAuth2\\MarshmallowPortal.OAuth2.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

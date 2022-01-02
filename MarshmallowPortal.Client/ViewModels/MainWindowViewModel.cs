@@ -8,18 +8,22 @@ using System.Threading.Tasks;
 using MarshmallowPortal.OAuth2.Discord;
 using MarshmallowPortal.OAuth2.Github;
 using MarshmallowPortal.OAuth2.Google;
+using MarshmallowPortal.Shared;
 using ReactiveUI;
+using Serilog;
 
 namespace MarshmallowPortal.Client.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {
+    private readonly MarshmallowClient _client;
     private bool _logInActive;
     private readonly GoogleOAuth2Service _googleService;
     private readonly GithubOAuth2Service _githubService;
     private readonly DiscordOAuth2Service _discordService;
     private readonly string _state;
     private bool _addQuestionFlyoutEnabled;
+    private Shared.User _user;
 
     public bool LogInActive
     {
@@ -65,6 +69,7 @@ public class MainWindowViewModel : ViewModelBase
 
     public MainWindowViewModel()
     {
+        _client = new MarshmallowClient();
         LogInActive = true;
         var googleCredentials = new GoogleCredentials("1014028450593-3488rb7a1naenckr526ptl14t40ngl2f.apps.googleusercontent.com", null!);
         _googleService = new GoogleOAuth2Service(googleCredentials, new []{GoogleOAuth2Service.Email, GoogleOAuth2Service.Profile});
@@ -82,15 +87,24 @@ public class MainWindowViewModel : ViewModelBase
         listener.Prefixes.Add("http://localhost:6001/");
         listener.Start();
         var context = listener.GetContext();
-        /*
         if (context.Request.QueryString["state"] != _state)
             throw new Exception("oh well");
-        */
         var code = context.Request.QueryString["code"];
+        var tokenType = context.Request.Url?.AbsolutePath[1..] switch
+        {
+            "discord" => TokenType.Discord,
+            "google" => TokenType.Google,
+            "github" => TokenType.Github,
+            _ => throw new ArgumentOutOfRangeException()
+        };
         var sr = new StreamWriter(context.Response.OutputStream);
         sr.Write("<h1>close</h1>");
         sr.Close();
         context.Response.Close();
+        Log.Information(code);
+        _user = _client.GetUser(code, tokenType);
+        _client.AddAuth(_user.Token);
+        Log.Information("{@User}", _user);
         LogInActive = false;
     }
 }
