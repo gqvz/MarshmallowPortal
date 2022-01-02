@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Client", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.OAuth2", "MarshmallowPortal.OAuth2\MarshmallowPortal.OAuth2.csproj", "{517232D9-0827-4FAD-B9A9-14AB834DF6A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshmallowPortal.Shared", "MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj", "{724FE841-6589-4032-BDC1-AA5E313D673A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{517232D9-0827-4FAD-B9A9-14AB834DF6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{517232D9-0827-4FAD-B9A9-14AB834DF6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{517232D9-0827-4FAD-B9A9-14AB834DF6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724FE841-6589-4032-BDC1-AA5E313D673A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724FE841-6589-4032-BDC1-AA5E313D673A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724FE841-6589-4032-BDC1-AA5E313D673A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724FE841-6589-4032-BDC1-AA5E313D673A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

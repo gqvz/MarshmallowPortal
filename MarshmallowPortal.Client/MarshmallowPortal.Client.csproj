@@ -42,4 +42,8 @@
         <DependentUpon>Section.axaml</DependentUpon>
       </Compile>
     </ItemGroup>
+    
+    <ItemGroup>
+      <Content Include="MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj" />
+    </ItemGroup>
 </Project>
