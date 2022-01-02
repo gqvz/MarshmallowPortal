@@ -12,6 +12,7 @@
         <None Update="Config.json">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <None Remove="MarshmallowPortal.Shared\**" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="0.10.8" />
@@ -41,9 +42,14 @@
       <Compile Update="Controls\Section.axaml.ViewMode.cs">
         <DependentUpon>Section.axaml</DependentUpon>
       </Compile>
+      <Compile Remove="MarshmallowPortal.Shared\**" />
     </ItemGroup>
     
     <ItemGroup>
-      <Content Include="MarshmallowPortal.Shared\MarshmallowPortal.Shared.csproj" />
+      <AvaloniaXaml Remove="MarshmallowPortal.Shared\**" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EmbeddedResource Remove="MarshmallowPortal.Shared\**" />
     </ItemGroup>
 </Project>

@@ -1,8 +1,5 @@
 ﻿using System.IO;
-using Avalonia.Controls;
-using MarshmallowPortal.Client.ViewModels;
 using MarshmallowPortal.Shared;
-using Microsoft.CodeAnalysis.Diagnostics;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
