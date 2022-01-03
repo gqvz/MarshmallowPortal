@@ -71,7 +71,7 @@ public class MainWindowViewModel : ViewModelBase
     {
         _client = new MarshmallowClient();
         LogInActive = true;
-        var googleCredentials = new GoogleCredentials("1014028450593-3488rb7a1naenckr526ptl14t40ngl2f.apps.googleusercontent.com", null!);
+        var googleCredentials = new GoogleCredentials("171949902476-fskne98irdh28pu9cqen310hblhg1f2v.apps.googleusercontent.com", null!);
         _googleService = new GoogleOAuth2Service(googleCredentials, new []{GoogleOAuth2Service.Email, GoogleOAuth2Service.Profile});
         var discordCredentials = new DiscordCredentials("914081312837607464", null!);
         _discordService = new DiscordOAuth2Service(discordCredentials, new []{DiscordOAuth2Service.Email, DiscordOAuth2Service.Identify});

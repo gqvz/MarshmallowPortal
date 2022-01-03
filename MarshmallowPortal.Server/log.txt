@@ -3803,3 +3803,233 @@ System.AggregateException: One or more errors occurred. (The given key 'access_t
 2022-01-03 01:02:14.546 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
 2022-01-03 01:02:14.564 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 1724.4748ms
 2022-01-03 01:02:14.575 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=lvm0RGO77M5HKnDl7YOJ3QyppFhask - - - 200 - application/json;+charset=utf-8 1801.7995ms
+2022-01-03 01:53:13.673 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 01:53:14.514 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 01:53:14.515 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 01:53:14.516 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 01:53:14.517 +05:30 [INF] Hosting environment: Development
+2022-01-03 01:53:14.520 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 01:53:15.464 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 01:53:15.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 220.9378ms
+2022-01-03 01:53:16.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2022-01-03 01:53:16.096 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-01-03 01:53:16.098 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 22.7589ms
+2022-01-03 01:53:16.160 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 01:53:16.336 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.1819ms
+2022-01-03 01:55:42.529 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2022-01-03 01:55:42.558 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2022-01-03 01:55:42.581 +05:30 [INF] Executing ViewResult, running view Index.
+2022-01-03 01:55:42.734 +05:30 [INF] Executed ViewResult - view Index executed in 158.7843ms.
+2022-01-03 01:55:42.741 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 179.4046ms
+2022-01-03 01:55:42.743 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 214.3303ms
+2022-01-03 01:55:43.476 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+2022-01-03 01:55:43.480 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 404 0 - 4.3009ms
+2022-01-03 01:56:17.289 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2022-01-03 01:56:17.297 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MarshmallowPortal.Server.Controllers.HomeController (MarshmallowPortal.Server).
+2022-01-03 01:56:17.304 +05:30 [INF] Executing ViewResult, running view Index.
+2022-01-03 01:56:17.313 +05:30 [INF] Executed ViewResult - view Index executed in 9.9053ms.
+2022-01-03 01:56:17.318 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.HomeController.Index (MarshmallowPortal.Server) in 14.9978ms
+2022-01-03 01:56:17.319 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 30.8556ms
+2022-01-03 01:56:23.051 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/toke - -
+2022-01-03 01:56:23.058 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/toke - - - 404 0 - 7.3337ms
+2022-01-03 01:56:26.219 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/google - -
+2022-01-03 01:56:26.266 +05:30 [INF] Route matched with {action = "GET_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 01:56:26.517 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-01-03 01:56:26.525 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Google (MarshmallowPortal.Server) in 256.1953ms
+2022-01-03 01:56:26.529 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/google - - - 400 - application/problem+json;+charset=utf-8 310.7660ms
+2022-01-03 01:56:35.639 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/:5001/api/login/Discord?code=nfVsREurgEEdqKd1CNEiuOrOVPzGDV - -
+2022-01-03 01:56:35.642 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/:5001/api/login/Discord?code=nfVsREurgEEdqKd1CNEiuOrOVPzGDV - - - 404 0 - 2.6462ms
+2022-01-03 01:58:34.220 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=g8XV4beuQKEKWTPn6FMlNA2VjVrlIs - -
+2022-01-03 01:58:34.224 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 01:58:35.454 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 01:58:35.458 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 1227.4609ms
+2022-01-03 01:58:35.464 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=g8XV4beuQKEKWTPn6FMlNA2VjVrlIs - - - 200 - application/json;+charset=utf-8 1243.6168ms
+2022-01-03 02:17:39.151 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:17:39.686 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:17:39.687 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:17:39.688 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:17:39.689 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:17:39.690 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:17:43.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 02:17:43.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 192.0484ms
+2022-01-03 02:17:43.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2022-01-03 02:17:43.868 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-01-03 02:17:43.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 30.6309ms
+2022-01-03 02:17:44.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2022-01-03 02:17:44.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 02:17:44.239 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-01-03 02:17:44.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 239.1501ms
+2022-01-03 02:17:44.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 235.7730ms
+2022-01-03 02:18:09.065 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=c3EkCz1JWt81zw7Z8iwwxIT8cIrwIQ - -
+2022-01-03 02:18:09.110 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:18:10.479 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:18:10.501 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 1385.4181ms
+2022-01-03 02:18:10.510 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=c3EkCz1JWt81zw7Z8iwwxIT8cIrwIQ - - - 200 - application/json;+charset=utf-8 1444.2219ms
+2022-01-03 02:18:11.589 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90
+2022-01-03 02:18:11.596 +05:30 [INF] Route matched with {action = "POST_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Discord(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:18:47.064 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.POST_Discord (MarshmallowPortal.Server) in 35464.0928ms
+2022-01-03 02:18:47.072 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: who are you
+   at MarshmallowPortal.Server.Data.ApplicationContext.RefreshToken(String reqToken, String reqRefreshToken, TokenType tokenType) in C:\dev\MarshmallowPortal\MarshmallowPortal.Server\Data\ApplicationContext.cs:line 61
+   at MarshmallowPortal.Server.Controllers.TokenController.POST_Discord(TokenRefreshRequest req) in C:\dev\MarshmallowPortal\MarshmallowPortal.Server\Controllers\TokenController.cs:line 40
+   at lambda_method14(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-03 02:18:47.108 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90 - 500 - text/plain;+charset=utf-8 35519.4656ms
+2022-01-03 02:19:25.123 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:19:25.600 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:19:25.602 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:19:25.603 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:19:25.604 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:19:25.604 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:19:43.915 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=WqXcY01cmz7U6LoCOOUTgeMsUPLr3f - -
+2022-01-03 02:19:43.995 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:19:57.896 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:19:57.930 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 13928.9792ms
+2022-01-03 02:19:57.940 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=WqXcY01cmz7U6LoCOOUTgeMsUPLr3f - - - 200 - application/json;+charset=utf-8 14026.2929ms
+2022-01-03 02:19:59.036 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90
+2022-01-03 02:19:59.044 +05:30 [INF] Route matched with {action = "POST_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Discord(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:21:39.676 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:21:40.128 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:21:40.130 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:21:40.131 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:21:40.132 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:21:40.133 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:21:43.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 02:21:43.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 251.5921ms
+2022-01-03 02:21:43.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2022-01-03 02:21:43.682 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-01-03 02:21:43.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 143632 text/css 48.8394ms
+2022-01-03 02:21:43.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 02:21:44.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 250.1792ms
+2022-01-03 02:22:04.869 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=gmqm9AMpm6AwSpNXRiAvGmlsO5cAub - -
+2022-01-03 02:22:04.920 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:22:09.472 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:22:09.485 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 4559.2569ms
+2022-01-03 02:22:09.491 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=gmqm9AMpm6AwSpNXRiAvGmlsO5cAub - - - 200 - application/json;+charset=utf-8 4621.9643ms
+2022-01-03 02:22:10.541 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90
+2022-01-03 02:22:10.546 +05:30 [INF] Route matched with {action = "POST_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Discord(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:25:12.841 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:25:13.364 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:25:13.367 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:25:13.369 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:25:13.370 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:25:13.371 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:25:14.151 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 02:25:14.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 186.1783ms
+2022-01-03 02:25:14.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 02:25:14.894 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.2740ms
+2022-01-03 02:25:31.590 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=pwO2ueK5sDcisrLjcN72FtoDWgnjiq - -
+2022-01-03 02:25:31.630 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:25:35.025 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:25:35.039 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 3402.8112ms
+2022-01-03 02:25:35.049 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=pwO2ueK5sDcisrLjcN72FtoDWgnjiq - - - 200 - application/json;+charset=utf-8 3458.1214ms
+2022-01-03 02:25:36.115 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90
+2022-01-03 02:25:36.122 +05:30 [INF] Route matched with {action = "POST_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Discord(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:27:23.777 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.POST_Discord (MarshmallowPortal.Server) in 107651.4053ms
+2022-01-03 02:27:23.782 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key 'access_token' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at MarshmallowPortal.OAuth2.Discord.DiscordOAuth2Service.RefreshToken(String refreshToken) in C:\dev\MarshmallowPortal\MarshmallowPortal.OAuth2\Discord\DiscordOAuth2Service.cs:line 88
+   at MarshmallowPortal.Server.Data.ApplicationContext.RefreshToken(String reqToken, String reqRefreshToken, TokenType tokenType) in C:\dev\MarshmallowPortal\MarshmallowPortal.Server\Data\ApplicationContext.cs:line 66
+   at MarshmallowPortal.Server.Controllers.TokenController.POST_Discord(TokenRefreshRequest req) in C:\dev\MarshmallowPortal\MarshmallowPortal.Server\Controllers\TokenController.cs:line 40
+   at lambda_method14(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-03 02:27:23.811 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90 - 500 - text/plain;+charset=utf-8 107696.3302ms
+2022-01-03 02:28:52.665 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:28:53.146 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:28:53.147 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:28:53.149 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:28:53.150 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:28:53.151 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:28:53.814 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 02:28:53.998 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 189.3618ms
+2022-01-03 02:28:54.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 02:28:54.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 211.7517ms
+2022-01-03 02:29:16.637 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=hoOcwFlOYriYr67qGFLqsbPLxIECeP - -
+2022-01-03 02:29:16.676 +05:30 [INF] Route matched with {action = "GET_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Discord(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:29:21.205 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:29:21.215 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Discord (MarshmallowPortal.Server) in 4533.8164ms
+2022-01-03 02:29:21.225 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Discord?code=hoOcwFlOYriYr67qGFLqsbPLxIECeP - - - 200 - application/json;+charset=utf-8 4587.5793ms
+2022-01-03 02:29:22.275 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Discord application/json 90
+2022-01-03 02:29:22.280 +05:30 [INF] Route matched with {action = "POST_Discord", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Discord(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:31:25.110 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:31:25.891 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:31:25.893 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:31:25.895 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:31:25.908 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:31:25.909 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:31:26.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-01-03 02:31:26.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 294.4669ms
+2022-01-03 02:31:27.533 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-01-03 02:31:27.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.4249ms
+2022-01-03 02:33:10.666 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWiRs6UfAtw-YBBypkreaBxx2-N0AIWWs6Ci51ePZX8rX24mAmEafXgU_ZJOaVL5uA - -
+2022-01-03 02:33:10.708 +05:30 [INF] Route matched with {action = "GET_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:33:11.663 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:33:11.677 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Google (MarshmallowPortal.Server) in 962.1214ms
+2022-01-03 02:33:11.689 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWiRs6UfAtw-YBBypkreaBxx2-N0AIWWs6Ci51ePZX8rX24mAmEafXgU_ZJOaVL5uA - - - 200 - application/json;+charset=utf-8 1023.0896ms
+2022-01-03 02:33:12.743 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296
+2022-01-03 02:33:12.749 +05:30 [INF] Route matched with {action = "POST_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Google(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:33:12.988 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2022-01-03 02:33:12.991 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.POST_Google (MarshmallowPortal.Server) in 239.9147ms
+2022-01-03 02:33:12.993 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296 - 200 - application/json;+charset=utf-8 249.5193ms
+2022-01-03 02:34:24.598 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWgiLr_O3CvkGH3mO6HIp8ieoNWOX_rijfXGyoObLY1_5gjfl9CZj2g7YhqZEy5thA - -
+2022-01-03 02:34:24.603 +05:30 [INF] Route matched with {action = "GET_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:34:25.114 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:34:25.117 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Google (MarshmallowPortal.Server) in 511.3092ms
+2022-01-03 02:34:25.118 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWgiLr_O3CvkGH3mO6HIp8ieoNWOX_rijfXGyoObLY1_5gjfl9CZj2g7YhqZEy5thA - - - 200 - application/json;+charset=utf-8 519.7916ms
+2022-01-03 02:34:53.586 +05:30 [INF] User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-03 02:34:54.212 +05:30 [INF] Now listening on: https://localhost:5001
+2022-01-03 02:34:54.225 +05:30 [INF] Now listening on: http://localhost:5000
+2022-01-03 02:34:54.226 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-03 02:34:54.227 +05:30 [INF] Hosting environment: Development
+2022-01-03 02:34:54.228 +05:30 [INF] Content root path: C:\dev\MarshmallowPortal\MarshmallowPortal.Server\
+2022-01-03 02:35:13.079 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWjvGs3OEWOBBUidBiO1QNh85kHJyoMBju__JSUMz5vlgVMo-EEXhW1-qHtOGGppdQ - -
+2022-01-03 02:35:13.172 +05:30 [INF] Route matched with {action = "GET_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:35:14.603 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:35:14.650 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Google (MarshmallowPortal.Server) in 1470.8472ms
+2022-01-03 02:35:14.666 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWjvGs3OEWOBBUidBiO1QNh85kHJyoMBju__JSUMz5vlgVMo-EEXhW1-qHtOGGppdQ - - - 200 - application/json;+charset=utf-8 1587.9768ms
+2022-01-03 02:35:15.747 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296
+2022-01-03 02:35:15.754 +05:30 [INF] Route matched with {action = "POST_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Google(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:35:16.035 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2022-01-03 02:35:16.037 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.POST_Google (MarshmallowPortal.Server) in 279.0412ms
+2022-01-03 02:35:16.039 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296 - 200 - application/json;+charset=utf-8 291.9719ms
+2022-01-03 02:37:07.045 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWiHkbYzUDH_qBbLD2jWoFy2jUoQSkS4A6t9KX-k7JlatT9PNSj1jPhSLslmzE_73A - -
+2022-01-03 02:37:07.049 +05:30 [INF] Route matched with {action = "GET_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GET_Google(MarshmallowPortal.Shared.LoginRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:37:07.559 +05:30 [INF] Executing JsonResult, writing value of type 'MarshmallowPortal.Shared.User'.
+2022-01-03 02:37:07.564 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.GET_Google (MarshmallowPortal.Server) in 512.5621ms
+2022-01-03 02:37:07.566 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/login/Google?code=4%2f0AX4XfWiHkbYzUDH_qBbLD2jWoFy2jUoQSkS4A6t9KX-k7JlatT9PNSj1jPhSLslmzE_73A - - - 200 - application/json;+charset=utf-8 521.7504ms
+2022-01-03 02:37:08.647 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296
+2022-01-03 02:37:08.649 +05:30 [INF] Route matched with {action = "POST_Google", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] POST_Google(MarshmallowPortal.Shared.TokenRefreshRequest) on controller MarshmallowPortal.Server.Controllers.TokenController (MarshmallowPortal.Server).
+2022-01-03 02:37:08.898 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2022-01-03 02:37:08.903 +05:30 [INF] Executed action MarshmallowPortal.Server.Controllers.TokenController.POST_Google (MarshmallowPortal.Server) in 251.2274ms
+2022-01-03 02:37:08.906 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/login/Google application/json 296 - 200 - application/json;+charset=utf-8 259.1739ms

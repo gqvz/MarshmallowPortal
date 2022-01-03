@@ -31,9 +31,12 @@ public sealed class GoogleOAuth2Service
         await user.FetchProfile(); // making sure this token is valid
         if (!renewToken) return user;
 
-        async void Callback(object? gUser)
+        void Callback(object? gUser)
         {
-            if (gUser is GoogleUser googleUser) await RefreshToken(googleUser);
+            if (gUser is GoogleUser googleUser)
+            {
+                googleUser.Token = RefreshToken(googleUser.RefreshToken);
+            }
         }
 
         user.TokenRefreshTimer = new Timer(Callback, user, TimeSpan.FromSeconds(3599),
@@ -41,7 +44,7 @@ public sealed class GoogleOAuth2Service
         return user;
     }
 
-    public Task RefreshToken(GoogleUser googleUser)
+    public string RefreshToken(string refreshToken)
     {
         var client = new RestClient(TokenRequestUri);
         var request = new RestRequest("oauth2/v4/token", Method.POST);
@@ -49,13 +52,12 @@ public sealed class GoogleOAuth2Service
         {
             client_id = Credentials.ClientId ?? throw new InvalidOperationException(),
             client_secret = Credentials.ClientSecret ?? throw new InvalidOperationException(),
-            refresh_token = googleUser.RefreshToken,
+            refresh_token = refreshToken,
             grant_type = "refresh_token"
         });
         var response = client.Execute<Dictionary<string, string>>(request).Data;
         var newToken = response["access_token"];
-        googleUser.Token = newToken;
-        return Task.CompletedTask;
+        return newToken;
     }
 
     public (string, string) GetToken(string code, string redirectUri)

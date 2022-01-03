@@ -33,4 +33,16 @@ public class TokenController : ControllerBase
     {
         return new JsonResult(await _context.LoginUser(req.Code, TokenType.Google));
     }
+    
+    [HttpPost("discord")]
+    public async Task<JsonResult> POST_Discord([FromBody] TokenRefreshRequest req)
+    {
+        return new JsonResult(await _context.RefreshToken(req.Token, req.RefreshToken, TokenType.Discord));
+    }
+    
+    [HttpPost("google")]
+    public async Task<JsonResult> POST_Google([FromBody] TokenRefreshRequest req)
+    {
+        return new JsonResult(await _context.RefreshToken(req.Token, req.RefreshToken, TokenType.Google));
+    }
 }

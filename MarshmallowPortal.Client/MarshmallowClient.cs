@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Threading.Tasks;
 using MarshmallowPortal.Shared;
 using Newtonsoft.Json;
 using RestSharp;
@@ -34,7 +35,7 @@ public class MarshmallowClient
 
         _config = JsonConvert.DeserializeObject<Config>(File.ReadAllText("Config.json"));
 
-        _client = new RestClient($"{_config.Server.Address}:{_config.Server.Port}");
+        _client = new RestClient($"{_config.Server.Address}{(_config.Server.Port == 0 ? "" : $":{_config.Server.Port}")}");
     }
     
     public void AddAuth(string token)
@@ -46,7 +47,18 @@ public class MarshmallowClient
     {
         var request = new RestRequest($"api/login/{tokenType}", Method.GET);
         request.AddQueryParameter("code", code);
-        var res = _client.Get<User>(request);
-        return res.Data;
+        var result = _client.Get<User>(request);
+
+        void CallbackForRefresh(User u)
+        {
+            if (tokenType == TokenType.Github) return;
+            var req = new RestRequest($"api/login/{tokenType}", Method.POST);
+            req.AddJsonBody(new TokenRefreshRequest(u.Token, u.RefreshToken));
+            var res = _client.Post<string>(req);
+            u.Token = res.Data;
+            Task.Delay(u.TokenLifetime * 1000).ContinueWith(_ => CallbackForRefresh(u));
+        }
+        Task.Delay(result.Data.TokenLifetime * 1000).ContinueWith(_ => CallbackForRefresh(result.Data));
+        return result.Data;
     }
 }
