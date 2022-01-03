@@ -1,6 +1,6 @@
 ﻿/MarshmallowPortal.Server/Config.json
-/MarshmallowPortal.Server/log.txt
 /MarshmallowPortal.OAuth2/Config.json
+/MarshmallowPortal.Server/log.txt
 
 *.rsuser
 *.suo

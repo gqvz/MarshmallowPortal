@@ -30,6 +30,7 @@
       <None Include="Config.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Remove="log.txt" />
     </ItemGroup>
 
 </Project>
