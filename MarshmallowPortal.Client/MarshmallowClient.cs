@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using MarshmallowPortal.Shared;
 using Newtonsoft.Json;
@@ -10,48 +11,51 @@ namespace MarshmallowPortal.Client;
 
 public record Config
 {
-    public ServerConfig Server { get; init; }
+    public ServerConfig[] Servers { get; init; }
 }
 
 public record ServerConfig
 {
     public string Address { get; init; }
     public int Port { get; init; }
+    public bool Active { get; init; }
 }
 
 public class MarshmallowClient
 {
-    private Config _config;
-    private RestClient _client;
-
+    private readonly Config _config;
+    private readonly RestClient _client;
+    private User _currentUser;
 
     public MarshmallowClient()
     {
-        if (!File.Exists("Config.json"))
+        if (!File.Exists("ClientConfig.json"))
         {
             new StreamWriter(File.Create("Config.json"))
                 .Write("{\n  \"Server\": {\n    \"Address\": \"127.0.0.1\",\n    \"Port\": 5001\n  }");
         }
 
-        _config = JsonConvert.DeserializeObject<Config>(File.ReadAllText("Config.json"));
+        _config = JsonConvert.DeserializeObject<Config>(File.ReadAllText("ClientConfig.json"));
 
-        _client = new RestClient($"{_config.Server.Address}{(_config.Server.Port == 0 ? "" : $":{_config.Server.Port}")}");
+        var server = _config.Servers.FirstOrDefault(x => x.Active) ?? _config.Servers.First();
+        
+        _client = new RestClient($"{server.Address}{(server.Port == 0 ? "" : $":{server.Port}")}");
     }
     
-    public void AddAuth(string token)
-    {
-        _client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(token);
-    }
-
     public User GetUser(string code, TokenType tokenType)
     {
         var request = new RestRequest($"api/login/{tokenType}", Method.GET);
         request.AddQueryParameter("code", code);
         var result = _client.Get<User>(request);
 
+        _client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(result.Data.Token);
+        
+        if (tokenType == TokenType.Github) return result.Data;
+
+        _currentUser = result.Data;
+        
         void CallbackForRefresh(User u)
         {
-            if (tokenType == TokenType.Github) return;
             var req = new RestRequest($"api/login/{tokenType}", Method.POST);
             req.AddJsonBody(new TokenRefreshRequest(u.Token, u.RefreshToken));
             var res = _client.Post<string>(req);

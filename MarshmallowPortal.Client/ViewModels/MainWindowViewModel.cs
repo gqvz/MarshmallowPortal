@@ -1,9 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
-using System.Threading;
 using System.Threading.Tasks;
 using MarshmallowPortal.OAuth2.Discord;
 using MarshmallowPortal.OAuth2.Github;
@@ -22,19 +20,19 @@ public class MainWindowViewModel : ViewModelBase
     private readonly GithubOAuth2Service _githubService;
     private readonly DiscordOAuth2Service _discordService;
     private readonly string _state;
-    private bool _addQuestionFlyoutEnabled;
-    private Shared.User _user;
+    private User _user = null!;
+    private string _loginScreenText = "Please login using your browser";
 
     public bool LogInActive
     {
         get => _logInActive;
         set => this.RaiseAndSetIfChanged(ref _logInActive, value);
     }
-
-    public bool AddQuestionFlyoutEnabled
+    
+    public string LoginScreenText
     {
-        get => _addQuestionFlyoutEnabled;
-        set => this.RaiseAndSetIfChanged(ref _addQuestionFlyoutEnabled, value);
+        get => _loginScreenText;
+        set => this.RaiseAndSetIfChanged(ref _loginScreenText, value);
     }
 
     public void LoginWithGithubClicked()
@@ -70,7 +68,7 @@ public class MainWindowViewModel : ViewModelBase
     public MainWindowViewModel()
     {
         _client = new MarshmallowClient();
-        LogInActive = true;
+        LogInActive = false;
         var googleCredentials = new GoogleCredentials("171949902476-fskne98irdh28pu9cqen310hblhg1f2v.apps.googleusercontent.com", null!);
         _googleService = new GoogleOAuth2Service(googleCredentials, new []{GoogleOAuth2Service.Email, GoogleOAuth2Service.Profile});
         var discordCredentials = new DiscordCredentials("914081312837607464", null!);
@@ -81,30 +79,66 @@ public class MainWindowViewModel : ViewModelBase
         Task.Run(StartTheListener);
     }
 
-    private async Task StartTheListener()
+    private Task StartTheListener()
     {
         var listener = new HttpListener();
         listener.Prefixes.Add("http://localhost:6001/");
+
         listener.Start();
         var context = listener.GetContext();
         if (context.Request.QueryString["state"] != _state)
-            throw new Exception("oh well");
-        var code = context.Request.QueryString["code"];
-        var tokenType = context.Request.Url?.AbsolutePath[1..] switch
         {
-            "discord" => TokenType.Discord,
-            "google" => TokenType.Google,
-            "github" => TokenType.Github,
-            _ => throw new ArgumentOutOfRangeException()
-        };
+            LoginScreenText = "shit went wild";
+            Log.Error("state no no");
+            var s = new StreamWriter(context.Response.OutputStream);
+            s.Write("<h1>smh epic error</h1>");
+            s.Close();
+            context.Response.Close();
+            listener.Stop();
+            Task.Run(StartTheListener);
+            return Task.CompletedTask;
+        }
+        var code = context.Request.QueryString["code"];
+        TokenType tokenType;
+        try
+        {
+            tokenType = context.Request.Url?.AbsolutePath[1..] switch
+            {
+                "discord" => TokenType.Discord,
+                "google" => TokenType.Google,
+                "github" => TokenType.Github,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
+        catch
+        {
+            LoginScreenText = "shit went wild";
+            Log.Error("what ya doin bruh");
+            var s = new StreamWriter(context.Response.OutputStream);
+            s.Write("<h1>smh epic error</h1>");
+            s.Close();
+            context.Response.Close();
+            listener.Stop();
+            Task.Run(StartTheListener);
+            return Task.CompletedTask;
+        }
         var sr = new StreamWriter(context.Response.OutputStream);
         sr.Write("<h1>close</h1>");
         sr.Close();
         context.Response.Close();
-        Log.Information(code);
-        _user = _client.GetUser(code, tokenType);
-        _client.AddAuth(_user.Token);
-        Log.Information("{@User}", _user);
+        listener.Stop();
+        try
+        {
+            _user = _client.GetUser(code, tokenType);
+        }
+        catch (Exception e)
+        {
+            LoginScreenText = "shit went wild";
+            Log.Error(e, "Error lol");
+            Task.Run(StartTheListener);
+            return Task.CompletedTask;
+        }
         LogInActive = false;
+        return Task.CompletedTask;
     }
 }

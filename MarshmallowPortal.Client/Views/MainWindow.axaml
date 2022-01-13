@@ -30,7 +30,7 @@
             <Panel Grid.Row="2"
                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#282C34" Name="AllTheContent">
                 <StackPanel Name="LoginWindow" VerticalAlignment="Center" Spacing="20"  IsEnabled="{Binding LogInActive}" IsVisible="{Binding LogInActive}">
-                    <TextBlock Text="Please login using your browser" FontFamily="{StaticResource NiceFont}" TextAlignment="Center" FontSize="30"/>
+                    <TextBlock Text="{Binding LoginScreenText}" FontFamily="{StaticResource NiceFont}" TextAlignment="Center" FontSize="30"/>
                     <StackPanel Name="LoginButtons" Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-github" FontSize="25" Command="{Binding LoginWithGithubClicked}"/>
                         <Button Classes="Modern" Width="200" i:Attached.Icon="fab fb-google" FontSize="25" Command="{Binding LoginWithGoogleClicked}"/>
@@ -61,7 +61,7 @@
                             <Separator Grid.Row="1" Background="#535861"/>
                             <ScrollViewer Grid.Row="2" Margin="5 5 5 0">
                                 <StackPanel Name="QuestionArea">
-                                    <uc:Section HeaderText="Section A">
+                                    <uc:Section HeaderText="a">
                                         <uc:Section.Questions>
                                             <uc:Question QuestionText="ADAWDAWD">
                                                 <uc:Question.Answers>
